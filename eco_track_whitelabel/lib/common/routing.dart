@@ -18,8 +18,7 @@ final _profileNavigatorKey = GlobalKey<NavigatorState>();
 
 final goRouterProvider = Provider.autoDispose<GoRouter>(
   (ref) {
-    // TODO: retirar comentario ao integrar o Firebase
-    // final analyticsObserver = ref.watch(analyticsObserverProvider);
+    final analyticsObserver = ref.watch(analyticsObserverProvider);
     return GoRouter(
       navigatorKey: _goRouterNavigatorKey,
       initialLocation: _feedPath,
