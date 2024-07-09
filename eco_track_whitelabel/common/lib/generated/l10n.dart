@@ -59,6 +59,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Feed`
+  String get bottomNavigationFeedItem {
+    return Intl.message(
+      'Feed',
+      name: 'bottomNavigationFeedItem',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Perfil`
+  String get bottomNavigationProfileItem {
+    return Intl.message(
+      'Perfil',
+      name: 'bottomNavigationProfileItem',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

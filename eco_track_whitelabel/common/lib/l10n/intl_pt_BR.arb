@@ -1,4 +1,6 @@
 {
   "@@locale": "pt_BR",
-  "appTitle": "EcoTrack"
+  "appTitle": "EcoTrack",
+  "bottomNavigationFeedItem": "Feed",
+  "bottomNavigationProfileItem": "Perfil"
 }
