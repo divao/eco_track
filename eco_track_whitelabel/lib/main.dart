@@ -16,10 +16,10 @@ class Log {
   Logger logger = Logger(printer: PrettyPrinter());
 
   Future<void> logError(
-      String errorType,
-      dynamic error, [
-        StackTrace? stackTrace,
-      ]) async {
+    String errorType,
+    dynamic error, [
+    StackTrace? stackTrace,
+  ]) async {
     logger.e(errorType, error: error, stackTrace: stackTrace);
   }
 }
@@ -29,7 +29,7 @@ Future<void> main() async {
   final errorLogger = Log().logError;
 
   await runZonedGuarded(
-        () async {
+    () async {
       WidgetsFlutterBinding.ensureInitialized();
 
       // TODO: tirar comentario apos configurar o firebase
@@ -61,10 +61,12 @@ Future<void> main() async {
         ),
       );
       runApp(
-        const _MyApp(),
+        const ProviderScope(
+          child: _MyApp(),
+        ),
       );
     },
-        (error, stackTrace) async {
+    (error, stackTrace) async {
       await errorLogger(
         'Zoned Guarded Error',
         error,

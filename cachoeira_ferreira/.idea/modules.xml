@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/cachoeira_ferreira.iml" filepath="$PROJECT_DIR$/cachoeira_ferreira.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/cachoeira_ferreira_android.iml" filepath="$PROJECT_DIR$/android/cachoeira_ferreira_android.iml" />
     </modules>
   </component>
 </project>
