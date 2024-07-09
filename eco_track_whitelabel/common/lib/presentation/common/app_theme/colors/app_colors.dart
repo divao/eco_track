@@ -9,4 +9,12 @@ abstract class AppColors {
 
   Color get surfaceColor;
 
+  // Bottom Navigation
+
+  Color get bottomNavigationBarColor;
+
+  Color get bottomNavigationBarSelectedIconColor;
+
+  Color get bottomNavigationBarUnselectedIconColor;
+
 }

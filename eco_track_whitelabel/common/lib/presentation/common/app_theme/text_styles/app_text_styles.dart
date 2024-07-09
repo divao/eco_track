@@ -6,4 +6,10 @@ abstract class AppTextStyles {
   }
 
   TextStyle get profileInfo;
+
+  // Bottom Navigation
+
+  TextStyle get bottomNavigationSelectedText;
+
+  TextStyle get bottomNavigationUnselectedText;
 }

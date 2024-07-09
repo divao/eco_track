@@ -8,4 +8,20 @@ class LightTextStyles implements AppTextStyles {
     fontWeight: FontWeight.w500,
     fontFamily: _montserratFontFamily,
   );
+
+  @override
+  TextStyle get bottomNavigationSelectedText => const TextStyle(
+    color: _green,
+    fontSize: 11,
+    fontWeight: FontWeight.w600,
+    fontFamily: _montserratFontFamily,
+  );
+
+  @override
+  TextStyle get bottomNavigationUnselectedText => const TextStyle(
+    color: _graniteGray,
+    fontSize: 11,
+    fontWeight: FontWeight.w600,
+    fontFamily: _montserratFontFamily,
+  );
 }

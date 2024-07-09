@@ -22,4 +22,15 @@ class LightColors implements AppColors {
   @override
   Color get surfaceColor => _white;
 
+  // Bottom Navigation
+
+  @override
+  Color get bottomNavigationBarColor => _white;
+
+  @override
+  Color get bottomNavigationBarSelectedIconColor => _green;
+
+  @override
+  Color get bottomNavigationBarUnselectedIconColor => _graniteGray;
+
 }
