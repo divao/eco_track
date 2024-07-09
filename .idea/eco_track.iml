@@ -9,6 +9,15 @@
       <excludeFolder url="file://$MODULE_DIR$/eco_track_whitelabel/common/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/eco_track_whitelabel/common/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/eco_track_whitelabel/common/build" />
+      <excludeFolder url="file://$MODULE_DIR$/cachoeira_ferreira/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/cachoeira_ferreira/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/cachoeira_ferreira/build" />
+      <excludeFolder url="file://$MODULE_DIR$/eco_track_whitelabel/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/eco_track_whitelabel/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/eco_track_whitelabel/build" />
+      <excludeFolder url="file://$MODULE_DIR$/eco_track_whitelabel/domain/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/eco_track_whitelabel/domain/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/eco_track_whitelabel/domain/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
