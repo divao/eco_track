@@ -79,6 +79,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Entrar`
+  String get accessPageSignInButton {
+    return Intl.message(
+      'Entrar',
+      name: 'accessPageSignInButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Criar conta`
+  String get accessPageSignUpButton {
+    return Intl.message(
+      'Criar conta',
+      name: 'accessPageSignUpButton',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

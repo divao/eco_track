@@ -22,6 +22,10 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "accessPageSignInButton":
+            MessageLookupByLibrary.simpleMessage("Entrar"),
+        "accessPageSignUpButton":
+            MessageLookupByLibrary.simpleMessage("Criar conta"),
         "appTitle": MessageLookupByLibrary.simpleMessage("EcoTrack"),
         "bottomNavigationFeedItem":
             MessageLookupByLibrary.simpleMessage("Feed"),

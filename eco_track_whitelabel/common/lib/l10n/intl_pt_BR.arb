@@ -2,5 +2,7 @@
   "@@locale": "pt_BR",
   "appTitle": "EcoTrack",
   "bottomNavigationFeedItem": "Feed",
-  "bottomNavigationProfileItem": "Perfil"
+  "bottomNavigationProfileItem": "Perfil",
+  "accessPageSignInButton": "Entrar",
+  "accessPageSignUpButton": "Criar conta"
 }

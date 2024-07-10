@@ -7,9 +7,15 @@ abstract class AppTextStyles {
 
   TextStyle get profileInfo;
 
+  TextStyle get filledButton;
+
+  TextStyle get textButton;
+
   // Bottom Navigation
 
   TextStyle get bottomNavigationSelectedText;
 
   TextStyle get bottomNavigationUnselectedText;
+
+
 }

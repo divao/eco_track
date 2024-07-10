@@ -5,38 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="464a9ebe-2920-418b-98be-5b3eb5a5f373" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/android/app/google-services.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/firebase_options.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/domain/lib/data_repository/auth_data_repository.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/domain/lib/model/user_profile.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/domain/lib/use_case/delete_user_uc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/domain/lib/use_case/get_user_profile_uc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/domain/lib/use_case/sign_in_uc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/domain/lib/use_case/sign_out_uc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/domain/lib/use_case/sign_up_uc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/domain/lib/use_case/use_case.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/firebase.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/data/mappers/remote_to_domain.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/data/remote/data_source/auth_rds.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/data/remote/data_source/user_rds.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/data/remote/model/user_profile_rm.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/data/repository/auth_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/access/access_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/common/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cachoeira_ferreira/common/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/.flutter-plugins" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/android/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/intl/messages_pt_BR.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/intl/messages_pt_BR.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/l10n.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/l10n.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/domain/lib/exceptions.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/domain/lib/exceptions.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/common/analytics_logger.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/common/analytics_logger.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/common/providers/general_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/common/providers/general_provider.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/l10n/intl_pt_BR.arb" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/l10n/intl_pt_BR.arb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/assets/app_assets_paths.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/assets/app_assets_paths.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/assets/light_assets_paths.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/assets/light_assets_paths.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/text_styles/app_text_styles.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/text_styles/app_text_styles.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/text_styles/light_text_styles.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/text_styles/light_text_styles.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/common/routing.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/common/routing.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +46,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/authentication" />
+                    <option name="lastUsedInstant" value="1720566044" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="dev" />
                     <option name="lastUsedInstant" value="1720546895" />
@@ -108,7 +93,7 @@
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/authentication&quot;,
     &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/kaio-/Documents/GitHub/eco_track/eco_track_whitelabel/lib/presentation/common/bottom_navigation&quot;,
@@ -123,6 +108,7 @@
       <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\eco_track_whitelabel" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\eco_track_whitelabel\common\lib\assets" />
       <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\eco_track_whitelabel\common\lib" />
     </key>
   </component>
