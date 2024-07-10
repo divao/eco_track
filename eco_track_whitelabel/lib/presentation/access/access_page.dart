@@ -14,11 +14,14 @@ class AccessPage extends ConsumerWidget {
       body: Padding(
         padding: const EdgeInsets.all(36),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Image.asset(
               ref.assets.logoImage,
-              height: 200,
+              height: 140,
             ),
+            const SizedBox(height: 36),
             FilledButton(
               onPressed: () => ref.goRouter.goSignIn(),
               style: FilledButton.styleFrom(backgroundColor: ref.colors.primaryColor),
@@ -27,6 +30,7 @@ class AccessPage extends ConsumerWidget {
                 style: ref.textStyles.filledButton,
               ),
             ),
+            const SizedBox(height: 8),
             TextButton(
               onPressed: () => ref.goRouter.goSignUp(),
               child: Text(
