@@ -1,5 +1,6 @@
 import 'package:eco_track_whitelabel/common/providers/general_provider.dart';
 import 'package:eco_track_whitelabel/presentation/access/access_page.dart';
+import 'package:eco_track_whitelabel/presentation/access/sign_in/sign_in_page.dart';
 import 'package:eco_track_whitelabel/presentation/home/home_page.dart';
 import 'package:eco_track_whitelabel/presentation/home_navigation_page.dart';
 import 'package:flutter/material.dart';
@@ -49,8 +50,7 @@ final goRouterProvider = Provider.autoDispose<GoRouter>(
           routes: [
             GoRoute(
               path: _signInPage,
-              // builder: (context, state) => SignInPage.create(),
-              builder: (context, state) => HomePage.create(),
+              builder: (context, state) => SignInPage.create(),
             ),
             GoRoute(
               path: _signUpPage,
@@ -97,6 +97,10 @@ extension PageNavigationExtension on GoRouter {
   void goSignIn() => go(_signInPath);
 
   void goSignUp() => go(_signUpPath);
+
+  void goFeed() => go(_feedPath);
+
+  void goProfile() => go(_profilePath);
 }
 
 extension GoRouterConsumerExtension on WidgetRef {

@@ -15,3 +15,9 @@ class EmailAlreadyInUseException implements EcoTrackException {}
 class UserNotLoggedException implements EcoTrackException {}
 
 class ResponseParseException implements EcoTrackException {}
+
+class EmptyFormFieldException implements EcoTrackException {}
+
+class InvalidFormFieldException implements EcoTrackException {}
+
+class BackendValidationException implements EcoTrackException {}

@@ -33,4 +33,40 @@ class LightColors implements AppColors {
   @override
   Color get bottomNavigationBarUnselectedIconColor => _graniteGray;
 
+  // Flush Bar
+
+  @override
+  Color get flushbarBackgroundColor => _green;
+
+  @override
+  Color get flushbarIconColor => _darkGray;
+
+  // Text Field
+
+  @override
+  Color get textFieldUnfocusedBorderColor => _green;
+
+  @override
+  Color get textFieldFocusedBorderColor => _black;
+
+  @override
+  Color get textFieldErrorBorderColor => _firebrick;
+
+  @override
+  Color get textFieldPasswordVisibilityIconColor => _white.withOpacity(0.6);
+
+  // EcoButton
+
+  @override
+  Color get filledGreenButtonColor => _green;
+
+  @override
+  Color get buttonBorderColor => _green;
+
+  @override
+  Color get buttonFilledGreenLoadingIndicatorColor => _white;
+
+  @override
+  Color get buttonLoadingIndicatorColor => _green;
+
 }

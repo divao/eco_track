@@ -1,5 +1,6 @@
 import 'package:common/presentation/common/app_theme/theme_extension.dart';
 import 'package:eco_track_whitelabel/common/routing.dart';
+import 'package:eco_track_whitelabel/presentation/common/eco_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -22,21 +23,15 @@ class AccessPage extends ConsumerWidget {
               height: 140,
             ),
             const SizedBox(height: 36),
-            FilledButton(
+            EcoButton(
               onPressed: () => ref.goRouter.goSignIn(),
-              style: FilledButton.styleFrom(backgroundColor: ref.colors.primaryColor),
-              child: Text(
-                ref.s.accessPageSignInButton,
-                style: ref.textStyles.filledButton,
-              ),
+              text: ref.s.accessPageSignInButton,
             ),
             const SizedBox(height: 8),
-            TextButton(
+            EcoButton(
               onPressed: () => ref.goRouter.goSignUp(),
-              child: Text(
-                ref.s.accessPageSignUpButton,
-                style: ref.textStyles.textButton,
-              ),
+              buttonType: ButtonType.text,
+              text: ref.s.accessPageSignUpButton,
             ),
           ],
         ),

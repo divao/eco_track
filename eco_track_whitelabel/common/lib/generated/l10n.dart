@@ -99,6 +99,256 @@ class S {
       args: [],
     );
   }
+
+  /// `Entrar`
+  String get signInPageTitle {
+    return Intl.message(
+      'Entrar',
+      name: 'signInPageTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `E-mail`
+  String get signInPageEmailField {
+    return Intl.message(
+      'E-mail',
+      name: 'signInPageEmailField',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Senha`
+  String get signInPagePasswordField {
+    return Intl.message(
+      'Senha',
+      name: 'signInPagePasswordField',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Entrar`
+  String get signInPageSignInButton {
+    return Intl.message(
+      'Entrar',
+      name: 'signInPageSignInButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cadastro`
+  String get signUpPageTitle {
+    return Intl.message(
+      'Cadastro',
+      name: 'signUpPageTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Nome`
+  String get signUpPageNameField {
+    return Intl.message(
+      'Nome',
+      name: 'signUpPageNameField',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `E-mail`
+  String get signUpPageEmailField {
+    return Intl.message(
+      'E-mail',
+      name: 'signUpPageEmailField',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Senha`
+  String get signUpPagePasswordField {
+    return Intl.message(
+      'Senha',
+      name: 'signUpPagePasswordField',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirme a senha`
+  String get signUpPageConfirmPasswordField {
+    return Intl.message(
+      'Confirme a senha',
+      name: 'signUpPageConfirmPasswordField',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cadastrar`
+  String get signUpPageSignUpButton {
+    return Intl.message(
+      'Cadastrar',
+      name: 'signUpPageSignUpButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ocorreu um erro, tente novamente!`
+  String get flushbarServerErrorMessage {
+    return Intl.message(
+      'Ocorreu um erro, tente novamente!',
+      name: 'flushbarServerErrorMessage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `O email informado já está em uso!`
+  String get flushbarEmailErrorMessage {
+    return Intl.message(
+      'O email informado já está em uso!',
+      name: 'flushbarEmailErrorMessage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get signInEmailLabel {
+    return Intl.message(
+      'Email',
+      name: 'signInEmailLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Digite seu email`
+  String get signInEmailHintText {
+    return Intl.message(
+      'Digite seu email',
+      name: 'signInEmailHintText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Senha`
+  String get signInPasswordLabel {
+    return Intl.message(
+      'Senha',
+      name: 'signInPasswordLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Digite sua senha`
+  String get signInPasswordHintText {
+    return Intl.message(
+      'Digite sua senha',
+      name: 'signInPasswordHintText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Esqueci a senha`
+  String get signInForgotPassword {
+    return Intl.message(
+      'Esqueci a senha',
+      name: 'signInForgotPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `E-mail inválido`
+  String get signInInvalidEmailError {
+    return Intl.message(
+      'E-mail inválido',
+      name: 'signInInvalidEmailError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `E-mail ou senha incorreta`
+  String get signInWrongCredentialsError {
+    return Intl.message(
+      'E-mail ou senha incorreta',
+      name: 'signInWrongCredentialsError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `O nome é obrigatório`
+  String get signUpNameEmptyErrorText {
+    return Intl.message(
+      'O nome é obrigatório',
+      name: 'signUpNameEmptyErrorText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `O nome deve ter pelo menos 3 caracteres`
+  String get signUpNameInvalidErrorText {
+    return Intl.message(
+      'O nome deve ter pelo menos 3 caracteres',
+      name: 'signUpNameInvalidErrorText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `O email é obrigatório`
+  String get signUpEmailEmptyErrorText {
+    return Intl.message(
+      'O email é obrigatório',
+      name: 'signUpEmailEmptyErrorText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Campo inválido! Exemplo: exemplo@email.com`
+  String get signUpEmailInvalidErrorText {
+    return Intl.message(
+      'Campo inválido! Exemplo: exemplo@email.com',
+      name: 'signUpEmailInvalidErrorText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `A senha é obrigatória`
+  String get signUpPasswordEmptyErrorText {
+    return Intl.message(
+      'A senha é obrigatória',
+      name: 'signUpPasswordEmptyErrorText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `A senha deve ter pelo menos 6 caracteres`
+  String get signUpPasswordInvalidErrorText {
+    return Intl.message(
+      'A senha deve ter pelo menos 6 caracteres',
+      name: 'signUpPasswordInvalidErrorText',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

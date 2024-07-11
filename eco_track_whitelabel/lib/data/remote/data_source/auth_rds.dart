@@ -24,7 +24,8 @@ class AuthRDS {
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found' ||
           e.code == 'wrong-password' ||
-          e.code == 'invalid-email') {
+          e.code == 'invalid-email' ||
+          e.code == 'invalid-credential') {
         throw InvalidCredentialsException();
       } else {
         throw UnexpectedException();

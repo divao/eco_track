@@ -30,6 +30,49 @@ class MessageLookup extends MessageLookupByLibrary {
         "bottomNavigationFeedItem":
             MessageLookupByLibrary.simpleMessage("Feed"),
         "bottomNavigationProfileItem":
-            MessageLookupByLibrary.simpleMessage("Perfil")
+            MessageLookupByLibrary.simpleMessage("Perfil"),
+        "flushbarEmailErrorMessage": MessageLookupByLibrary.simpleMessage(
+            "O email informado já está em uso!"),
+        "flushbarServerErrorMessage": MessageLookupByLibrary.simpleMessage(
+            "Ocorreu um erro, tente novamente!"),
+        "signInEmailHintText":
+            MessageLookupByLibrary.simpleMessage("Digite seu email"),
+        "signInEmailLabel": MessageLookupByLibrary.simpleMessage("Email"),
+        "signInForgotPassword":
+            MessageLookupByLibrary.simpleMessage("Esqueci a senha"),
+        "signInInvalidEmailError":
+            MessageLookupByLibrary.simpleMessage("E-mail inválido"),
+        "signInPageEmailField": MessageLookupByLibrary.simpleMessage("E-mail"),
+        "signInPagePasswordField":
+            MessageLookupByLibrary.simpleMessage("Senha"),
+        "signInPageSignInButton":
+            MessageLookupByLibrary.simpleMessage("Entrar"),
+        "signInPageTitle": MessageLookupByLibrary.simpleMessage("Entrar"),
+        "signInPasswordHintText":
+            MessageLookupByLibrary.simpleMessage("Digite sua senha"),
+        "signInPasswordLabel": MessageLookupByLibrary.simpleMessage("Senha"),
+        "signInWrongCredentialsError":
+            MessageLookupByLibrary.simpleMessage("E-mail ou senha incorreta"),
+        "signUpEmailEmptyErrorText":
+            MessageLookupByLibrary.simpleMessage("O email é obrigatório"),
+        "signUpEmailInvalidErrorText": MessageLookupByLibrary.simpleMessage(
+            "Campo inválido! Exemplo: exemplo@email.com"),
+        "signUpNameEmptyErrorText":
+            MessageLookupByLibrary.simpleMessage("O nome é obrigatório"),
+        "signUpNameInvalidErrorText": MessageLookupByLibrary.simpleMessage(
+            "O nome deve ter pelo menos 3 caracteres"),
+        "signUpPageConfirmPasswordField":
+            MessageLookupByLibrary.simpleMessage("Confirme a senha"),
+        "signUpPageEmailField": MessageLookupByLibrary.simpleMessage("E-mail"),
+        "signUpPageNameField": MessageLookupByLibrary.simpleMessage("Nome"),
+        "signUpPagePasswordField":
+            MessageLookupByLibrary.simpleMessage("Senha"),
+        "signUpPageSignUpButton":
+            MessageLookupByLibrary.simpleMessage("Cadastrar"),
+        "signUpPageTitle": MessageLookupByLibrary.simpleMessage("Cadastro"),
+        "signUpPasswordEmptyErrorText":
+            MessageLookupByLibrary.simpleMessage("A senha é obrigatória"),
+        "signUpPasswordInvalidErrorText": MessageLookupByLibrary.simpleMessage(
+            "A senha deve ter pelo menos 6 caracteres")
       };
 }
