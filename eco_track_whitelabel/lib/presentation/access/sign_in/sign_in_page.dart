@@ -2,6 +2,7 @@ import 'package:common/generated/l10n.dart';
 import 'package:common/presentation/common/app_theme/theme_extension.dart';
 import 'package:eco_track_whitelabel/common/routing.dart';
 import 'package:eco_track_whitelabel/presentation/access/sign_in/bloc/sign_in_bloc.dart';
+import 'package:eco_track_whitelabel/presentation/access/sign_in/bloc/sign_in_event.dart';
 import 'package:eco_track_whitelabel/presentation/access/sign_in/bloc/sign_in_state.dart';
 import 'package:eco_track_whitelabel/presentation/common/eco_button.dart';
 import 'package:eco_track_whitelabel/presentation/common/eco_text_field.dart';
@@ -13,8 +14,6 @@ import 'package:eco_track_whitelabel/presentation/eco_scaffold.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-import 'bloc/sign_in_event.dart';
 
 class SignInPage extends ConsumerStatefulWidget {
   const SignInPage({
@@ -79,7 +78,7 @@ class _SignInPageState extends ConsumerState<SignInPage> {
   }
 
   void _onSignInFailed(SignInStatus status, BuildContext context) {
-    if (status == SignInStatus.undefined) {
+    if (status == SignInStatus.undefinedError) {
       FlushbarHandler.instance.serverErrorFlushbar(
         context,
         ref: ref,

@@ -8,6 +8,10 @@ import 'package:domain/use_case/get_user_profile_uc.dart';
 import 'package:domain/use_case/sign_in_uc.dart';
 import 'package:domain/use_case/sign_out_uc.dart';
 import 'package:domain/use_case/sign_up_uc.dart';
+import 'package:domain/use_case/validate_name_uc.dart';
+import 'package:domain/use_case/validate_email_uc.dart';
+import 'package:domain/use_case/validate_password_uc.dart';
+import 'package:domain/use_case/validate_password_confirmation_uc.dart';
 import 'package:eco_track_whitelabel/common/analytics_logger.dart';
 import 'package:eco_track_whitelabel/common/analytics_observer.dart';
 import 'package:eco_track_whitelabel/data/remote/data_source/auth_rds.dart';
@@ -126,4 +130,25 @@ final deleteUserUCProvider = Provider<DeleteUserUC>((ref) {
     logger: logger,
     repository: repository,
   );
+});
+
+final validateNameUCProvider = Provider<ValidateNameUC>((ref) {
+  final logger = ref.watch(errorLoggerProvider);
+  return ValidateNameUC(logger: logger);
+});
+
+final validateEmailUCProvider = Provider<ValidateEmailUC>((ref) {
+  final logger = ref.watch(errorLoggerProvider);
+  return ValidateEmailUC(logger: logger);
+});
+
+final validatePasswordUCProvider = Provider<ValidatePasswordUC>((ref) {
+  final logger = ref.watch(errorLoggerProvider);
+  return ValidatePasswordUC(logger: logger);
+});
+
+final validatePasswordConfirmationUCProvider =
+    Provider<ValidatePasswordConfirmationUC>((ref) {
+  final logger = ref.watch(errorLoggerProvider);
+  return ValidatePasswordConfirmationUC(logger: logger);
 });

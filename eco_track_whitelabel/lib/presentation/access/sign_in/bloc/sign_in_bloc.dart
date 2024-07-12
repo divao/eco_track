@@ -30,14 +30,14 @@ class SignInBloc extends Bloc<SignInEvent, SignInState> {
             passwordInputStatus: InputStatus.empty,
           ),
         ) {
-    on<EmailChanged>(_onUsernameChanged);
+    on<EmailChanged>(_onEmailChanged);
     on<PasswordChanged>(_onPasswordChanged);
     on<SignInSubmitted>(_onSignInSubmitted);
   }
 
   final SignInUC _signInUC;
 
-  void _onUsernameChanged(
+  void _onEmailChanged(
     EmailChanged event,
     Emitter<SignInState> emit,
   ) {
@@ -194,7 +194,7 @@ class SignInBloc extends Bloc<SignInEvent, SignInState> {
       } else {
         emit(
           state.copyWith(
-            signInStatus: SignInStatus.undefined,
+            signInStatus: SignInStatus.undefinedError,
             buttonStatus: ButtonActive(),
           ),
         );

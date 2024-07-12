@@ -1,6 +1,6 @@
 enum SignUpStatus {
   emailAlreadyUsed,
-  undefined,
+  undefinedError,
   success,
   idle
 }

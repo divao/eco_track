@@ -1,6 +1,6 @@
 enum SignInStatus {
   invalidEmailOrPassword,
-  undefined,
+  undefinedError,
   success,
   idle
 }

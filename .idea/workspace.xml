@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464a9ebe-2920-418b-98be-5b3eb5a5f373" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/eco_scaffold.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/intl/messages_pt_BR.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/intl/messages_pt_BR.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/l10n.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/l10n.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/l10n/intl_pt_BR.arb" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/l10n/intl_pt_BR.arb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/colors/app_colors.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/colors/app_colors.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/colors/light_colors.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/colors/light_colors.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/text_styles/light_text_styles.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/text_styles/light_text_styles.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/access/access_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/access/access_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/access/sign_in/sign_in_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/access/sign_in/sign_in_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/common/eco_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/common/eco_button.dart" afterDir="false" />
-    </list>
+    <list default="true" id="464a9ebe-2920-418b-98be-5b3eb5a5f373" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

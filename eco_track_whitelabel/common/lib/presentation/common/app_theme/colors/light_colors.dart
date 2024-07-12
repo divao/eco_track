@@ -42,7 +42,7 @@ class LightColors implements AppColors {
   // Flush Bar
 
   @override
-  Color get flushbarBackgroundColor => _green;
+  Color get flushbarBackgroundColor => _firebrick;
 
   @override
   Color get flushbarIconColor => _darkGray;
