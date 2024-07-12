@@ -36,7 +36,6 @@ class _HomeNavigationPageState extends ConsumerState<HomeNavigationPage> {
     return EcoTrackNavBarScaffold(
       navigationShell: _navigationShell,
       navigationBarItems: [
-        // TODO: mudar icones?
         EcoTrackNavBarItem(
           key: EcoTrackViewKeys.ecoTrackBottomNavigationBarFeed,
           icon: Icons.feed_outlined,
