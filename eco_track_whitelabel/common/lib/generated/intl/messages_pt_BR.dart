@@ -38,8 +38,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "signInEmailHintText":
             MessageLookupByLibrary.simpleMessage("Digite seu e-mail"),
         "signInEmailLabel": MessageLookupByLibrary.simpleMessage("E-mail"),
-        "signInForgotPassword":
-            MessageLookupByLibrary.simpleMessage("Esqueci a senha"),
         "signInInvalidEmailError":
             MessageLookupByLibrary.simpleMessage("E-mail inválido"),
         "signInPageSignInButton":
@@ -50,23 +48,39 @@ class MessageLookup extends MessageLookupByLibrary {
         "signInPasswordLabel": MessageLookupByLibrary.simpleMessage("Senha"),
         "signInWrongCredentialsError":
             MessageLookupByLibrary.simpleMessage("E-mail ou senha incorreta"),
-        "signUpEmailEmptyErrorText":
+        "signUpEmailEmptyError":
             MessageLookupByLibrary.simpleMessage("O email é obrigatório"),
-        "signUpEmailInvalidErrorText": MessageLookupByLibrary.simpleMessage(
+        "signUpEmailHintText":
+            MessageLookupByLibrary.simpleMessage("Digite seu e-mail"),
+        "signUpEmailInvalidError": MessageLookupByLibrary.simpleMessage(
             "Campo inválido! Exemplo: exemplo@email.com"),
-        "signUpNameEmptyErrorText":
+        "signUpEmailLabel": MessageLookupByLibrary.simpleMessage("E-mail"),
+        "signUpNameEmptyError":
             MessageLookupByLibrary.simpleMessage("O nome é obrigatório"),
-        "signUpNameInvalidErrorText": MessageLookupByLibrary.simpleMessage(
+        "signUpNameHintText":
+            MessageLookupByLibrary.simpleMessage("Digite seu nome"),
+        "signUpNameInvalidError": MessageLookupByLibrary.simpleMessage(
             "O nome deve ter pelo menos 3 caracteres"),
-        "signUpPageConfirmPasswordField":
-            MessageLookupByLibrary.simpleMessage("Confirme a senha"),
-        "signUpPageNameField": MessageLookupByLibrary.simpleMessage("Nome"),
+        "signUpNameLabel": MessageLookupByLibrary.simpleMessage("Nome"),
         "signUpPageSignUpButton":
             MessageLookupByLibrary.simpleMessage("Cadastrar"),
         "signUpPageTitle": MessageLookupByLibrary.simpleMessage("Cadastro"),
-        "signUpPasswordEmptyErrorText":
+        "signUpPasswordConfirmationEmptyError":
+            MessageLookupByLibrary.simpleMessage(
+                "A confirmação de senha não pode ser vazia"),
+        "signUpPasswordConfirmationHintText":
+            MessageLookupByLibrary.simpleMessage("Digite sua senha novamente"),
+        "signUpPasswordConfirmationInvalidError":
+            MessageLookupByLibrary.simpleMessage(
+                "As senhas não são iguais, tente novamente"),
+        "signUpPasswordConfirmationLabel":
+            MessageLookupByLibrary.simpleMessage("Confirmar senha"),
+        "signUpPasswordEmptyError":
             MessageLookupByLibrary.simpleMessage("A senha é obrigatória"),
-        "signUpPasswordInvalidErrorText": MessageLookupByLibrary.simpleMessage(
-            "A senha deve ter pelo menos 6 caracteres")
+        "signUpPasswordHintText":
+            MessageLookupByLibrary.simpleMessage("Digite sua senha"),
+        "signUpPasswordInvalidError": MessageLookupByLibrary.simpleMessage(
+            "A senha deve ter pelo menos 6 caracteres"),
+        "signUpPasswordLabel": MessageLookupByLibrary.simpleMessage("Senha")
       };
 }

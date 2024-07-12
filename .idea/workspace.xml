@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464a9ebe-2920-418b-98be-5b3eb5a5f373" name="Changes" comment="" />
+    <list default="true" id="464a9ebe-2920-418b-98be-5b3eb5a5f373" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/intl/messages_pt_BR.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/intl/messages_pt_BR.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/l10n.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/l10n.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/l10n/intl_pt_BR.arb" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/l10n/intl_pt_BR.arb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/common/routing.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/common/routing.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/access/sign_up/bloc/sign_up_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/access/sign_up/bloc/sign_up_bloc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/access/sign_up/bloc/sign_up_event.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/access/sign_up/bloc/sign_up_event.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/access/sign_up/bloc/sign_up_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/access/sign_up/bloc/sign_up_state.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/access/sign_up/sign_up_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/access/sign_up/sign_up_page.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,12 +83,13 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Flutter.CachoeiraFerreira.executor": "Run",
-    "Flutter.EcoTrack.executor": "Debug",
+    "Flutter.EcoTrack.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "com.android.tools.idea.streaming.zoom.toolbar.visible": "false",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "feature/authentication",
     "io.flutter.reload.alreadyRun": "true",

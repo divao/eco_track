@@ -4,7 +4,7 @@ import 'package:eco_track_whitelabel/presentation/common/utils/status/sign_up_st
 
 final class SignUpState {
   const SignUpState({
-    required this.signInStatus,
+    required this.signUpStatus,
     required this.buttonStatus,
     required this.name,
     required this.email,
@@ -16,7 +16,7 @@ final class SignUpState {
     required this.passwordConfirmationInputStatus,
   });
 
-  final SignUpStatus signInStatus;
+  final SignUpStatus signUpStatus;
   final ButtonStatus buttonStatus;
   final String name;
   final String email;
@@ -40,7 +40,7 @@ final class SignUpState {
     InputStatus? passwordConfirmationInputStatus,
   }) {
     return SignUpState(
-      signInStatus: signUpStatus ?? this.signInStatus,
+      signUpStatus: signUpStatus ?? this.signUpStatus,
       buttonStatus: buttonStatus ?? this.buttonStatus,
       name: name ?? this.name,
       email: email ?? this.email,

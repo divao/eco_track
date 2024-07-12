@@ -190,16 +190,6 @@ class S {
     );
   }
 
-  /// `Esqueci a senha`
-  String get signInForgotPassword {
-    return Intl.message(
-      'Esqueci a senha',
-      name: 'signInForgotPassword',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `E-mail inválido`
   String get signInInvalidEmailError {
     return Intl.message(
@@ -220,81 +210,161 @@ class S {
     );
   }
 
+  /// `Nome`
+  String get signUpNameLabel {
+    return Intl.message(
+      'Nome',
+      name: 'signUpNameLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Digite seu nome`
+  String get signUpNameHintText {
+    return Intl.message(
+      'Digite seu nome',
+      name: 'signUpNameHintText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `E-mail`
+  String get signUpEmailLabel {
+    return Intl.message(
+      'E-mail',
+      name: 'signUpEmailLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Digite seu e-mail`
+  String get signUpEmailHintText {
+    return Intl.message(
+      'Digite seu e-mail',
+      name: 'signUpEmailHintText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Senha`
+  String get signUpPasswordLabel {
+    return Intl.message(
+      'Senha',
+      name: 'signUpPasswordLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Digite sua senha`
+  String get signUpPasswordHintText {
+    return Intl.message(
+      'Digite sua senha',
+      name: 'signUpPasswordHintText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirmar senha`
+  String get signUpPasswordConfirmationLabel {
+    return Intl.message(
+      'Confirmar senha',
+      name: 'signUpPasswordConfirmationLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Digite sua senha novamente`
+  String get signUpPasswordConfirmationHintText {
+    return Intl.message(
+      'Digite sua senha novamente',
+      name: 'signUpPasswordConfirmationHintText',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `O nome é obrigatório`
-  String get signUpNameEmptyErrorText {
+  String get signUpNameEmptyError {
     return Intl.message(
       'O nome é obrigatório',
-      name: 'signUpNameEmptyErrorText',
+      name: 'signUpNameEmptyError',
       desc: '',
       args: [],
     );
   }
 
   /// `O nome deve ter pelo menos 3 caracteres`
-  String get signUpNameInvalidErrorText {
+  String get signUpNameInvalidError {
     return Intl.message(
       'O nome deve ter pelo menos 3 caracteres',
-      name: 'signUpNameInvalidErrorText',
+      name: 'signUpNameInvalidError',
       desc: '',
       args: [],
     );
   }
 
   /// `O email é obrigatório`
-  String get signUpEmailEmptyErrorText {
+  String get signUpEmailEmptyError {
     return Intl.message(
       'O email é obrigatório',
-      name: 'signUpEmailEmptyErrorText',
+      name: 'signUpEmailEmptyError',
       desc: '',
       args: [],
     );
   }
 
   /// `Campo inválido! Exemplo: exemplo@email.com`
-  String get signUpEmailInvalidErrorText {
+  String get signUpEmailInvalidError {
     return Intl.message(
       'Campo inválido! Exemplo: exemplo@email.com',
-      name: 'signUpEmailInvalidErrorText',
+      name: 'signUpEmailInvalidError',
       desc: '',
       args: [],
     );
   }
 
   /// `A senha é obrigatória`
-  String get signUpPasswordEmptyErrorText {
+  String get signUpPasswordEmptyError {
     return Intl.message(
       'A senha é obrigatória',
-      name: 'signUpPasswordEmptyErrorText',
+      name: 'signUpPasswordEmptyError',
       desc: '',
       args: [],
     );
   }
 
   /// `A senha deve ter pelo menos 6 caracteres`
-  String get signUpPasswordInvalidErrorText {
+  String get signUpPasswordInvalidError {
     return Intl.message(
       'A senha deve ter pelo menos 6 caracteres',
-      name: 'signUpPasswordInvalidErrorText',
+      name: 'signUpPasswordInvalidError',
       desc: '',
       args: [],
     );
   }
 
-  /// `Nome`
-  String get signUpPageNameField {
+  /// `A confirmação de senha não pode ser vazia`
+  String get signUpPasswordConfirmationEmptyError {
     return Intl.message(
-      'Nome',
-      name: 'signUpPageNameField',
+      'A confirmação de senha não pode ser vazia',
+      name: 'signUpPasswordConfirmationEmptyError',
       desc: '',
       args: [],
     );
   }
 
-  /// `Confirme a senha`
-  String get signUpPageConfirmPasswordField {
+  /// `As senhas não são iguais, tente novamente`
+  String get signUpPasswordConfirmationInvalidError {
     return Intl.message(
-      'Confirme a senha',
-      name: 'signUpPageConfirmPasswordField',
+      'As senhas não são iguais, tente novamente',
+      name: 'signUpPasswordConfirmationInvalidError',
       desc: '',
       args: [],
     );

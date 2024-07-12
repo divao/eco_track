@@ -43,16 +43,16 @@ class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {
         _validatePasswordConfirmationUC = validatePasswordConfirmationUC,
         super(
           SignUpState(
-            signInStatus: SignUpStatus.idle,
+            signUpStatus: SignUpStatus.idle,
             buttonStatus: ButtonInactive(),
             name: '',
             email: '',
             password: '',
             passwordConfirmation: '',
-            nameInputStatus: InputStatus.empty,
-            emailInputStatus: InputStatus.empty,
-            passwordInputStatus: InputStatus.empty,
-            passwordConfirmationInputStatus: InputStatus.empty,
+            nameInputStatus: InputStatus.undefined,
+            emailInputStatus: InputStatus.undefined,
+            passwordInputStatus: InputStatus.undefined,
+            passwordConfirmationInputStatus: InputStatus.undefined,
           ),
         ) {
     on<NameChanged>(_onNameChanged);
@@ -68,20 +68,20 @@ class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {
   final ValidatePasswordUC _validatePasswordUC;
   final ValidatePasswordConfirmationUC _validatePasswordConfirmationUC;
 
-  void _onNameChanged(NameChanged event, Emitter emit) {
-    _updateNameInputStatus(event.name, emit);
+  Future<void> _onNameChanged(NameChanged event, Emitter emit) async {
+    await _updateNameInputStatus(event.name, emit);
     _validateFields(emit);
   }
 
-  void _onEmailChanged(EmailChanged event, Emitter emit) {
-    _updateEmailInputStatus(event.email, emit);
+  Future<void> _onEmailChanged(EmailChanged event, Emitter emit) async {
+    await _updateEmailInputStatus(event.email, emit);
     _validateFields(emit);
   }
 
-  void _onPasswordChanged(PasswordChanged event, Emitter emit) {
-    _updatePasswordInputStatus(event.password, emit);
+  Future<void> _onPasswordChanged(PasswordChanged event, Emitter emit) async {
+    await _updatePasswordInputStatus(event.password, emit);
     if (event.passwordConfirmation.isNotEmpty) {
-      _updatePasswordConfirmationInputStatus(
+      await _updatePasswordConfirmationInputStatus(
         event.password,
         event.passwordConfirmation,
         emit,
@@ -90,20 +90,20 @@ class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {
     _validateFields(emit);
   }
 
-  void _onPasswordConfirmationChanged(
+  Future<void> _onPasswordConfirmationChanged(
       PasswordConfirmationChanged event, Emitter emit) async {
-    _updatePasswordConfirmationInputStatus(
+    await _updatePasswordConfirmationInputStatus(
       event.password,
       event.passwordConfirmation,
       emit,
     );
     if (event.password.isNotEmpty) {
-      _updatePasswordInputStatus(event.password, emit);
+      await _updatePasswordInputStatus(event.password, emit);
     }
     _validateFields(emit);
   }
 
-  void _updateNameInputStatus(String name, Emitter emit) async {
+  Future<void> _updateNameInputStatus(String name, Emitter emit) async {
     try {
       await _validateNameUC.getFuture(
         ValidateNameUCParams(name),
@@ -124,7 +124,7 @@ class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {
     }
   }
 
-  void _updateEmailInputStatus(String email, Emitter emit) async {
+  Future<void> _updateEmailInputStatus(String email, Emitter emit) async {
     try {
       await _validateEmailUC.getFuture(
         ValidateEmailUCParams(email),
@@ -145,7 +145,7 @@ class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {
     }
   }
 
-  void _updatePasswordInputStatus(String password, Emitter emit) async {
+  Future<void> _updatePasswordInputStatus(String password, Emitter emit) async {
     try {
       await _validatePasswordUC.getFuture(
         ValidatePasswordUCParams(password),
@@ -162,7 +162,7 @@ class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {
     }
   }
 
-  void _updatePasswordConfirmationInputStatus(
+  Future<void> _updatePasswordConfirmationInputStatus(
     String password,
     String passwordConfirmation,
     Emitter emit,
