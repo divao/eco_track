@@ -10,12 +10,12 @@ class AnalyticsLogger {
 
   Future<void> _logEvent({
     required String name,
-    Map<String, dynamic>? parameters,
+    Map<String, Object>? parameters,
   }) async {
     if (kDebugMode) {
       print('AnalyticsLogger: logging event $name');
     }
-    final eventData = <String, dynamic>{
+    final eventData = <String, Object>{
       'date_time': DateTime.now().toIso8601String()
     }..addAll(parameters ?? {});
 

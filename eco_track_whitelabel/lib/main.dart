@@ -1,10 +1,12 @@
 import 'dart:async';
 import 'package:common/generated/l10n.dart';
+import 'package:common/firebase_options.dart';
 import 'package:common/common/common_localizations.dart';
 import 'package:common/presentation/common/app_theme/theme_extension.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:logger/logger.dart';
@@ -32,19 +34,18 @@ Future<void> main() async {
     () async {
       WidgetsFlutterBinding.ensureInitialized();
 
-      // TODO: tirar comentario apos configurar o firebase
-      // await Firebase.initializeApp(
-      //   options: DefaultFirebaseOptions.currentPlatform,
-      // );
-      //
-      // await FirebaseCrashlytics.instance
-      //     .setCrashlyticsCollectionEnabled(!kDebugMode);
-      //
-      // if (!kDebugMode) {
-      //   FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterError;
-      // }
-      //
-      // await FirebaseAnalytics.instance.logAppOpen();
+      await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform,
+      );
+
+      await FirebaseCrashlytics.instance
+          .setCrashlyticsCollectionEnabled(!kDebugMode);
+
+      if (!kDebugMode) {
+        FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterError;
+      }
+
+      await FirebaseAnalytics.instance.logAppOpen();
 
       await SystemChrome.setPreferredOrientations(
         <DeviceOrientation>[

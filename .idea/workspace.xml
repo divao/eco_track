@@ -5,33 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="464a9ebe-2920-418b-98be-5b3eb5a5f373" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/domain/lib/exceptions.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/domain/lib/logger.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/common/analytics_logger.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/common/analytics_observer.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/common/providers/general_provider.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/common/bottom_navigation/eco_track_navbar.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/common/bottom_navigation/eco_track_navbar_item.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/common/bottom_navigation/eco_track_navbar_item_builder.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/common/bottom_navigation/eco_track_navbar_scaffold.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/common/eco_track_view_keys.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/home_navigation_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/common/lib/generated/intl/messages_all.dart" beforeDir="false" afterPath="$PROJECT_DIR$/cachoeira_ferreira/common/lib/generated/intl/messages_all.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/common/lib/generated/intl/messages_pt_BR.dart" beforeDir="false" afterPath="$PROJECT_DIR$/cachoeira_ferreira/common/lib/generated/intl/messages_pt_BR.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/common/lib/generated/l10n.dart" beforeDir="false" afterPath="$PROJECT_DIR$/cachoeira_ferreira/common/lib/generated/l10n.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/intl/messages_all.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/intl/messages_all.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/intl/messages_pt_BR.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/intl/messages_pt_BR.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/l10n.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/l10n.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/l10n/intl_pt_BR.arb" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/l10n/intl_pt_BR.arb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/colors/app_colors.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/colors/app_colors.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/colors/light_colors.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/colors/light_colors.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/light_app_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/light_app_theme.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/text_styles/app_text_styles.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/text_styles/app_text_styles.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/text_styles/light_text_styles.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/presentation/common/app_theme/text_styles/light_text_styles.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/domain/lib/domain.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/domain/test/domain_test.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/common/routing.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/common/routing.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/home_navigation_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/home_navigation_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +35,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/authentication" />
+                    <option name="lastUsedInstant" value="1720566044" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="dev" />
                     <option name="lastUsedInstant" value="1720546895" />
@@ -102,8 +81,9 @@
     &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.android.tools.idea.streaming.zoom.toolbar.visible&quot;: &quot;false&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/authentication&quot;,
     &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/kaio-/Documents/GitHub/eco_track/eco_track_whitelabel/lib/presentation/common/bottom_navigation&quot;,
@@ -116,6 +96,13 @@
       <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\eco_track_whitelabel\lib\presentation\common\bottom_navigation" />
       <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\cachoeira_ferreira" />
       <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\eco_track_whitelabel" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\eco_track_whitelabel\lib\presentation\access\sign_up\bloc" />
+      <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\eco_track_whitelabel\lib\presentation\access\sign_in\bloc" />
+      <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\eco_track_whitelabel\common" />
+      <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\eco_track_whitelabel\common\lib\assets" />
+      <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\eco_track_whitelabel\common\lib" />
     </key>
   </component>
   <component name="RunManager" selected="Flutter.EcoTrack">

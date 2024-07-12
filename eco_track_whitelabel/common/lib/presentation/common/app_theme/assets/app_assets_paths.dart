@@ -5,4 +5,6 @@ abstract class AppAssetsPaths {
     return AppTheme.of(ref).assets;
   }
 
+  String get logoImage;
+
 }

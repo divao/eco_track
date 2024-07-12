@@ -7,9 +7,36 @@ abstract class AppTextStyles {
 
   TextStyle get profileInfo;
 
+  TextStyle get appBarTitle;
+
   // Bottom Navigation
 
   TextStyle get bottomNavigationSelectedText;
 
   TextStyle get bottomNavigationUnselectedText;
+
+  // Flush Bar
+
+  TextStyle get flushBarError;
+
+  // Text Field
+
+  TextStyle get textFieldErrorLabelStyle;
+
+  TextStyle get textFieldFocusedLabelStyle;
+
+  TextStyle get textFieldUnfocusedLabelStyle;
+
+  TextStyle get textFieldInputTextStyle;
+
+  TextStyle get textFieldHintTextStyle;
+
+  // EcoButton
+
+  TextStyle get outlinedButtonTextStyle;
+
+  TextStyle get textButtonTextStyle;
+
+  TextStyle get filledGreenButtonTextStyle;
+
 }
