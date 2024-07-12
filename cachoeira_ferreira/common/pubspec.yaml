@@ -1,0 +1,30 @@
+name: common
+
+environment:
+  sdk: '>=3.2.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.19.0
+  flutter_riverpod: ^2.4.9
+  riverpod: ^2.4.9
+  rxdart: ^0.27.7
+  firebase_core: ^3.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+#  TODO: Tirar comentario quando adicionar assets
+#  assets:
+#    - assets/
+
+flutter_intl:
+  main_locale: pt_BR
+  enabled: true
