@@ -110,26 +110,6 @@ class S {
     );
   }
 
-  /// `E-mail`
-  String get signInPageEmailField {
-    return Intl.message(
-      'E-mail',
-      name: 'signInPageEmailField',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Senha`
-  String get signInPagePasswordField {
-    return Intl.message(
-      'Senha',
-      name: 'signInPagePasswordField',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Entrar`
   String get signInPageSignInButton {
     return Intl.message(
@@ -145,56 +125,6 @@ class S {
     return Intl.message(
       'Cadastro',
       name: 'signUpPageTitle',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Nome`
-  String get signUpPageNameField {
-    return Intl.message(
-      'Nome',
-      name: 'signUpPageNameField',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `E-mail`
-  String get signUpPageEmailField {
-    return Intl.message(
-      'E-mail',
-      name: 'signUpPageEmailField',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Senha`
-  String get signUpPagePasswordField {
-    return Intl.message(
-      'Senha',
-      name: 'signUpPagePasswordField',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Confirme a senha`
-  String get signUpPageConfirmPasswordField {
-    return Intl.message(
-      'Confirme a senha',
-      name: 'signUpPageConfirmPasswordField',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Cadastrar`
-  String get signUpPageSignUpButton {
-    return Intl.message(
-      'Cadastrar',
-      name: 'signUpPageSignUpButton',
       desc: '',
       args: [],
     );
@@ -220,20 +150,20 @@ class S {
     );
   }
 
-  /// `Email`
+  /// `E-mail`
   String get signInEmailLabel {
     return Intl.message(
-      'Email',
+      'E-mail',
       name: 'signInEmailLabel',
       desc: '',
       args: [],
     );
   }
 
-  /// `Digite seu email`
+  /// `Digite seu e-mail`
   String get signInEmailHintText {
     return Intl.message(
-      'Digite seu email',
+      'Digite seu e-mail',
       name: 'signInEmailHintText',
       desc: '',
       args: [],
@@ -345,6 +275,36 @@ class S {
     return Intl.message(
       'A senha deve ter pelo menos 6 caracteres',
       name: 'signUpPasswordInvalidErrorText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Nome`
+  String get signUpPageNameField {
+    return Intl.message(
+      'Nome',
+      name: 'signUpPageNameField',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirme a senha`
+  String get signUpPageConfirmPasswordField {
+    return Intl.message(
+      'Confirme a senha',
+      name: 'signUpPageConfirmPasswordField',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cadastrar`
+  String get signUpPageSignUpButton {
+    return Intl.message(
+      'Cadastrar',
+      name: 'signUpPageSignUpButton',
       desc: '',
       args: [],
     );

@@ -12,7 +12,7 @@ class LightTextStyles implements AppTextStyles {
   @override
   TextStyle get appBarTitle => const TextStyle(
     color: _white,
-    fontSize: 18,
+    fontSize: 22,
     fontWeight: FontWeight.w500,
     fontFamily: _montserratFontFamily,
   );
@@ -65,7 +65,7 @@ class LightTextStyles implements AppTextStyles {
 
   @override
   TextStyle get textFieldUnfocusedLabelStyle => const TextStyle(
-    color: _white,
+    color: _darkGray,
     fontSize: 15,
     fontWeight: FontWeight.w700,
     fontFamily: _montserratFontFamily,
@@ -81,7 +81,7 @@ class LightTextStyles implements AppTextStyles {
 
   @override
   TextStyle get textFieldHintTextStyle => const TextStyle(
-    color: _black,
+    color: _graniteGray,
     fontSize: 17,
     fontWeight: FontWeight.w600,
     fontFamily: _montserratFontFamily,

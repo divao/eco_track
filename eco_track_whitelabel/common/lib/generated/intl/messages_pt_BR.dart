@@ -36,15 +36,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "flushbarServerErrorMessage": MessageLookupByLibrary.simpleMessage(
             "Ocorreu um erro, tente novamente!"),
         "signInEmailHintText":
-            MessageLookupByLibrary.simpleMessage("Digite seu email"),
-        "signInEmailLabel": MessageLookupByLibrary.simpleMessage("Email"),
+            MessageLookupByLibrary.simpleMessage("Digite seu e-mail"),
+        "signInEmailLabel": MessageLookupByLibrary.simpleMessage("E-mail"),
         "signInForgotPassword":
             MessageLookupByLibrary.simpleMessage("Esqueci a senha"),
         "signInInvalidEmailError":
             MessageLookupByLibrary.simpleMessage("E-mail inválido"),
-        "signInPageEmailField": MessageLookupByLibrary.simpleMessage("E-mail"),
-        "signInPagePasswordField":
-            MessageLookupByLibrary.simpleMessage("Senha"),
         "signInPageSignInButton":
             MessageLookupByLibrary.simpleMessage("Entrar"),
         "signInPageTitle": MessageLookupByLibrary.simpleMessage("Entrar"),
@@ -63,10 +60,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "O nome deve ter pelo menos 3 caracteres"),
         "signUpPageConfirmPasswordField":
             MessageLookupByLibrary.simpleMessage("Confirme a senha"),
-        "signUpPageEmailField": MessageLookupByLibrary.simpleMessage("E-mail"),
         "signUpPageNameField": MessageLookupByLibrary.simpleMessage("Nome"),
-        "signUpPagePasswordField":
-            MessageLookupByLibrary.simpleMessage("Senha"),
         "signUpPageSignUpButton":
             MessageLookupByLibrary.simpleMessage("Cadastrar"),
         "signUpPageTitle": MessageLookupByLibrary.simpleMessage("Cadastro"),

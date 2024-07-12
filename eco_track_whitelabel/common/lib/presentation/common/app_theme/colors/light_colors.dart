@@ -22,6 +22,12 @@ class LightColors implements AppColors {
   @override
   Color get surfaceColor => _white;
 
+  @override
+  Color get appBarBackgroundColor => _green;
+
+  @override
+  Color get appBarContentColor => _white;
+
   // Bottom Navigation
 
   @override

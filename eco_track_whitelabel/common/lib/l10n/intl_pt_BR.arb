@@ -6,19 +6,12 @@
   "accessPageSignInButton": "Entrar",
   "accessPageSignUpButton": "Criar conta",
   "signInPageTitle": "Entrar",
-  "signInPageEmailField": "E-mail",
-  "signInPagePasswordField": "Senha",
   "signInPageSignInButton": "Entrar",
   "signUpPageTitle": "Cadastro",
-  "signUpPageNameField": "Nome",
-  "signUpPageEmailField": "E-mail",
-  "signUpPagePasswordField": "Senha",
-  "signUpPageConfirmPasswordField": "Confirme a senha",
-  "signUpPageSignUpButton": "Cadastrar",
   "flushbarServerErrorMessage": "Ocorreu um erro, tente novamente!",
   "flushbarEmailErrorMessage": "O email informado já está em uso!",
-  "signInEmailLabel": "Email",
-  "signInEmailHintText": "Digite seu email",
+  "signInEmailLabel": "E-mail",
+  "signInEmailHintText": "Digite seu e-mail",
   "signInPasswordLabel": "Senha",
   "signInPasswordHintText": "Digite sua senha",
   "signInForgotPassword": "Esqueci a senha",
@@ -29,5 +22,9 @@
   "signUpEmailEmptyErrorText": "O email é obrigatório",
   "signUpEmailInvalidErrorText": "Campo inválido! Exemplo: exemplo@email.com",
   "signUpPasswordEmptyErrorText": "A senha é obrigatória",
-  "signUpPasswordInvalidErrorText": "A senha deve ter pelo menos 6 caracteres"
+  "signUpPasswordInvalidErrorText": "A senha deve ter pelo menos 6 caracteres",
+
+  "signUpPageNameField": "Nome",
+  "signUpPageConfirmPasswordField": "Confirme a senha",
+  "signUpPageSignUpButton": "Cadastrar"
 }

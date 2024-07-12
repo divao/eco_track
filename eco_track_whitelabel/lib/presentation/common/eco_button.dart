@@ -34,8 +34,8 @@ class EcoButton extends ConsumerWidget {
       constraints: const BoxConstraints(
         minHeight: 48,
       ),
-      child: ElevatedButton(
-        style: ElevatedButton.styleFrom(
+      child: FilledButton(
+        style: FilledButton.styleFrom(
           elevation: 0,
           backgroundColor: switch (buttonType) {
             ButtonType.outlined => Colors.transparent,

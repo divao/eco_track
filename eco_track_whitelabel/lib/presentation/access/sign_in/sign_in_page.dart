@@ -9,6 +9,7 @@ import 'package:eco_track_whitelabel/presentation/common/handler/flushbar_handle
 import 'package:eco_track_whitelabel/presentation/common/utils/status/button_status.dart';
 import 'package:eco_track_whitelabel/presentation/common/utils/status/input_status.dart';
 import 'package:eco_track_whitelabel/presentation/common/utils/status/sign_in_status.dart';
+import 'package:eco_track_whitelabel/presentation/eco_scaffold.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -92,16 +93,8 @@ class _SignInPageState extends ConsumerState<SignInPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text(
-            ref.s.signInPageTitle,
-            style: ref.textStyles.appBarTitle,
-          ),
-          backgroundColor: ref.colors.primaryColor,
-          iconTheme: IconThemeData(color: ref.colors.surfaceColor),
-        ),
-        backgroundColor: ref.colors.surfaceColor,
+    return EcoScaffold(
+        title: ref.s.signInPageTitle,
         body: BlocListener<SignInBloc, SignInState>(
           bloc: _bloc,
           listenWhen: (previous, current) =>
@@ -117,48 +110,63 @@ class _SignInPageState extends ConsumerState<SignInPage> {
             padding: const EdgeInsets.all(24),
             child: Column(
               children: [
-                BlocBuilder<SignInBloc, SignInState>(
-                  bloc: _bloc,
-                  buildWhen: (previous, current) =>
-                      previous.emailInputStatus != current.emailInputStatus,
-                  builder: (context, state) {
-                    return EcoTextField(
-                      controller: _emailController,
-                      focusNode: _emailFocusNode,
-                      onChanged: (email) => _bloc.add(EmailChanged(email, _passwordController.text)),
-                      onEditingComplete: () =>
-                          FocusScope.of(context).requestFocus(
-                        _passwordFocusNode,
-                      ),
-                      labelText: s.signInEmailLabel,
-                      hintText: s.signInEmailHintText,
-                      errorText: _validateEmail(state.emailInputStatus),
-                      textInputAction: TextInputAction.next,
-                      keyboardType: TextInputType.emailAddress,
-                    );
-                  },
+                Expanded(
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        BlocBuilder<SignInBloc, SignInState>(
+                          bloc: _bloc,
+                          buildWhen: (previous, current) =>
+                              previous.emailInputStatus !=
+                              current.emailInputStatus,
+                          builder: (context, state) {
+                            return EcoTextField(
+                              controller: _emailController,
+                              focusNode: _emailFocusNode,
+                              onChanged: (email) => _bloc.add(EmailChanged(
+                                  email, _passwordController.text)),
+                              onEditingComplete: () =>
+                                  FocusScope.of(context).requestFocus(
+                                _passwordFocusNode,
+                              ),
+                              labelText: s.signInEmailLabel,
+                              hintText: s.signInEmailHintText,
+                              errorText: _validateEmail(state.emailInputStatus),
+                              textInputAction: TextInputAction.next,
+                              keyboardType: TextInputType.emailAddress,
+                            );
+                          },
+                        ),
+                        const SizedBox(height: 24),
+                        BlocBuilder<SignInBloc, SignInState>(
+                          bloc: _bloc,
+                          buildWhen: (previous, current) =>
+                              previous.passwordInputStatus !=
+                              current.passwordInputStatus,
+                          builder: (context, state) {
+                            return EcoTextField(
+                              controller: _passwordController,
+                              focusNode: _passwordFocusNode,
+                              onChanged: (password) => _bloc.add(
+                                  PasswordChanged(
+                                      _emailController.text, password)),
+                              onEditingComplete: () =>
+                                  FocusScope.of(context).unfocus(),
+                              labelText: s.signInPasswordLabel,
+                              hintText: s.signInPasswordHintText,
+                              errorText:
+                                  _validatePassword(state.passwordInputStatus),
+                              textInputAction: TextInputAction.done,
+                              keyboardType: TextInputType.visiblePassword,
+                              isPassword: true,
+                            );
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
-                const SizedBox(height: 16),
-                BlocBuilder<SignInBloc, SignInState>(
-                  bloc: _bloc,
-                  buildWhen: (previous, current) =>
-                      previous.passwordInputStatus != current.passwordInputStatus,
-                  builder: (context, state) {
-                    return EcoTextField(
-                      controller: _passwordController,
-                      focusNode: _passwordFocusNode,
-                      onChanged: (password) =>
-                          _bloc.add(PasswordChanged(_emailController.text, password)),
-                      onEditingComplete: () => FocusScope.of(context).unfocus(),
-                      labelText: s.signInPasswordLabel,
-                      hintText: s.signInPasswordHintText,
-                      errorText: _validatePassword(state.passwordInputStatus),
-                      textInputAction: TextInputAction.done,
-                      keyboardType: TextInputType.visiblePassword,
-                    );
-                  },
-                ),
-                const SizedBox(height: 16),
+                const SizedBox(height: 24),
                 BlocBuilder<SignInBloc, SignInState>(
                     bloc: _bloc,
                     buildWhen: (previous, current) =>
