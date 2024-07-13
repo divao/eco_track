@@ -1,7 +1,7 @@
-import 'package:eco_track_whitelabel/data/remote/model/geolocation_vm.dart';
+import 'package:domain/model/geolocation.dart';
 
-class FeedPostVM {
-  FeedPostVM({
+class FeedPost {
+  const FeedPost({
     required this.name,
     required this.imageUrl,
     required this.description,
@@ -11,5 +11,5 @@ class FeedPostVM {
   final String name;
   final String imageUrl;
   final String description;
-  final GeolocationVM geolocation;
+  final Geolocation geolocation;
 }

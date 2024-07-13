@@ -4,6 +4,7 @@ import 'package:eco_track_whitelabel/presentation/access/sign_in/sign_in_page.da
 import 'package:eco_track_whitelabel/presentation/access/sign_up/sign_up_page.dart';
 import 'package:eco_track_whitelabel/presentation/home/home_page.dart';
 import 'package:eco_track_whitelabel/presentation/home_navigation_page.dart';
+import 'package:eco_track_whitelabel/presentation/main_navigation/feed/feed_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -66,7 +67,7 @@ final goRouterProvider = Provider.autoDispose<GoRouter>(
               routes: [
                 GoRoute(
                   path: _feedPath,
-                  builder: (context, state) => HomePage.create(),
+                  builder: (context, state) => FeedPage.create(),
                 ),
               ],
             ),
