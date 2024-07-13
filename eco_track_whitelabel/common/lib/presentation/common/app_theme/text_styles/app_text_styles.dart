@@ -9,6 +9,8 @@ abstract class AppTextStyles {
 
   TextStyle get appBarTitle;
 
+  TextStyle get errorText;
+
   // Bottom Navigation
 
   TextStyle get bottomNavigationSelectedText;

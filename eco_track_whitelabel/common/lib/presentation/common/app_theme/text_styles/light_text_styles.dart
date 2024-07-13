@@ -17,6 +17,14 @@ class LightTextStyles implements AppTextStyles {
     fontFamily: _montserratFontFamily,
   );
 
+  @override
+  TextStyle get errorText => const TextStyle(
+    color: _black,
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
+    fontFamily: _montserratFontFamily,
+  );
+
   // Bottom Navigation
 
   @override

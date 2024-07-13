@@ -35,6 +35,10 @@ class MessageLookup extends MessageLookupByLibrary {
             "O email informado já está em uso!"),
         "flushbarServerErrorMessage": MessageLookupByLibrary.simpleMessage(
             "Ocorreu um erro, tente novamente!"),
+        "genericError":
+            MessageLookupByLibrary.simpleMessage("Algo deu errado."),
+        "noInternetError":
+            MessageLookupByLibrary.simpleMessage("Sem conexão com a internet."),
         "signInEmailHintText":
             MessageLookupByLibrary.simpleMessage("Digite seu e-mail"),
         "signInEmailLabel": MessageLookupByLibrary.simpleMessage("E-mail"),
@@ -81,6 +85,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Digite sua senha"),
         "signUpPasswordInvalidError": MessageLookupByLibrary.simpleMessage(
             "A senha deve ter pelo menos 6 caracteres"),
-        "signUpPasswordLabel": MessageLookupByLibrary.simpleMessage("Senha")
+        "signUpPasswordLabel": MessageLookupByLibrary.simpleMessage("Senha"),
+        "timeoutError":
+            MessageLookupByLibrary.simpleMessage("Erro interno do servidor."),
+        "tryAgain": MessageLookupByLibrary.simpleMessage("TENTAR NOVAMENTE")
       };
 }

@@ -150,6 +150,46 @@ class S {
     );
   }
 
+  /// `Algo deu errado.`
+  String get genericError {
+    return Intl.message(
+      'Algo deu errado.',
+      name: 'genericError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Erro interno do servidor.`
+  String get timeoutError {
+    return Intl.message(
+      'Erro interno do servidor.',
+      name: 'timeoutError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sem conexão com a internet.`
+  String get noInternetError {
+    return Intl.message(
+      'Sem conexão com a internet.',
+      name: 'noInternetError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `TENTAR NOVAMENTE`
+  String get tryAgain {
+    return Intl.message(
+      'TENTAR NOVAMENTE',
+      name: 'tryAgain',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `E-mail`
   String get signInEmailLabel {
     return Intl.message(
