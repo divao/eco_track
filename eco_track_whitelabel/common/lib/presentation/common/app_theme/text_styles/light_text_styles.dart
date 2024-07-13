@@ -120,4 +120,30 @@ class LightTextStyles implements AppTextStyles {
     fontWeight: FontWeight.w600,
     fontFamily: _montserratFontFamily,
   );
+
+  // Dialog
+
+  @override
+  TextStyle get dialogTitleTextStyle => const TextStyle(
+    color: _green,
+    fontSize: 20,
+    fontWeight: FontWeight.w700,
+    fontFamily: _montserratFontFamily,
+  );
+
+  @override
+  TextStyle get dialogContentTextStyle => const TextStyle(
+    color: _black,
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+    fontFamily: _montserratFontFamily,
+  );
+
+  @override
+  TextStyle get dialogButtonTextStyle => const TextStyle(
+    color: _green,
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+    fontFamily: _montserratFontFamily,
+  );
 }

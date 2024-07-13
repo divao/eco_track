@@ -60,6 +60,16 @@ class S {
     );
   }
 
+  /// `OK`
+  String get confirm {
+    return Intl.message(
+      'OK',
+      name: 'confirm',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Feed`
   String get bottomNavigationFeedItem {
     return Intl.message(
@@ -415,6 +425,26 @@ class S {
     return Intl.message(
       'Cadastrar',
       name: 'signUpPageSignUpButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Informativo`
+  String get permissionsInfoDialogTitle {
+    return Intl.message(
+      'Informativo',
+      name: 'permissionsInfoDialogTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `EcoTrack é um app que fomenta o turismo pelo meio ambiente. Ao postar uma foto, a sua localização será marcada para possibilitar que outros usuários visualizem e visitem o mesmo local.\nPortanto, para postar fotos, é necessário conceder as permissões de localização e câmera.`
+  String get permissionsInfoDialogContent {
+    return Intl.message(
+      'EcoTrack é um app que fomenta o turismo pelo meio ambiente. Ao postar uma foto, a sua localização será marcada para possibilitar que outros usuários visualizem e visitem o mesmo local.\nPortanto, para postar fotos, é necessário conceder as permissões de localização e câmera.',
+      name: 'permissionsInfoDialogContent',
       desc: '',
       args: [],
     );

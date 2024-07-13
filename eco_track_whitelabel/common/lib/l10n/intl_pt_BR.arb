@@ -1,6 +1,7 @@
 {
   "@@locale": "pt_BR",
   "appTitle": "EcoTrack",
+  "confirm": "OK",
   "bottomNavigationFeedItem": "Feed",
   "bottomNavigationProfileItem": "Perfil",
   "accessPageSignInButton": "Entrar",
@@ -36,5 +37,7 @@
   "signUpPasswordInvalidError": "A senha deve ter pelo menos 6 caracteres",
   "signUpPasswordConfirmationEmptyError": "A confirmação de senha não pode ser vazia",
   "signUpPasswordConfirmationInvalidError": "As senhas não são iguais, tente novamente",
-  "signUpPageSignUpButton": "Cadastrar"
+  "signUpPageSignUpButton": "Cadastrar",
+  "permissionsInfoDialogTitle": "Informativo",
+  "permissionsInfoDialogContent": "EcoTrack é um app que fomenta o turismo pelo meio ambiente. Ao postar uma foto, a sua localização será marcada para possibilitar que outros usuários visualizem e visitem o mesmo local.\nPortanto, para postar fotos, é necessário conceder as permissões de localização e câmera."
 }

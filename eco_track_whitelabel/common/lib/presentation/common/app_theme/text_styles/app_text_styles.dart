@@ -41,4 +41,12 @@ abstract class AppTextStyles {
 
   TextStyle get filledGreenButtonTextStyle;
 
+  // Dialog
+
+  TextStyle get dialogTitleTextStyle;
+
+  TextStyle get dialogContentTextStyle;
+
+  TextStyle get dialogButtonTextStyle;
+
 }

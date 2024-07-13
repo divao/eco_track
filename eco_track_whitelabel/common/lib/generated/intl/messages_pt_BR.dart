@@ -31,6 +31,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Feed"),
         "bottomNavigationProfileItem":
             MessageLookupByLibrary.simpleMessage("Perfil"),
+        "confirm": MessageLookupByLibrary.simpleMessage("OK"),
         "flushbarEmailErrorMessage": MessageLookupByLibrary.simpleMessage(
             "O email informado já está em uso!"),
         "flushbarServerErrorMessage": MessageLookupByLibrary.simpleMessage(
@@ -39,6 +40,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Algo deu errado."),
         "noInternetError":
             MessageLookupByLibrary.simpleMessage("Sem conexão com a internet."),
+        "permissionsInfoDialogContent": MessageLookupByLibrary.simpleMessage(
+            "EcoTrack é um app que fomenta o turismo pelo meio ambiente. Ao postar uma foto, a sua localização será marcada para possibilitar que outros usuários visualizem e visitem o mesmo local.\nPortanto, para postar fotos, é necessário conceder as permissões de localização e câmera."),
+        "permissionsInfoDialogTitle":
+            MessageLookupByLibrary.simpleMessage("Informativo"),
         "signInEmailHintText":
             MessageLookupByLibrary.simpleMessage("Digite seu e-mail"),
         "signInEmailLabel": MessageLookupByLibrary.simpleMessage("E-mail"),

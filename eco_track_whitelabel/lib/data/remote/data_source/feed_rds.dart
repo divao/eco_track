@@ -31,7 +31,7 @@ class FeedRDS {
           } = data;
           final image =
               await getResourceUrlFromStorage(_firebaseStorage, imageUrl);
-          final postRM = tenhFeedPostRM(
+          final postRM = FeedPostRM(
             name: name,
             imageUrl: image,
             description: description,
