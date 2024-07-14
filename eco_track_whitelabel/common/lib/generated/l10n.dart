@@ -430,6 +430,16 @@ class S {
     );
   }
 
+  /// `Carregar foto`
+  String get signUpPageUploadPhotoButton {
+    return Intl.message(
+      'Carregar foto',
+      name: 'signUpPageUploadPhotoButton',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Informativo`
   String get permissionsInfoDialogTitle {
     return Intl.message(

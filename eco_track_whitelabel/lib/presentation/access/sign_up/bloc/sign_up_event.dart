@@ -1,3 +1,5 @@
+import 'dart:io';
+
 abstract class SignUpEvent {}
 
 class NameChanged extends SignUpEvent {
@@ -31,9 +33,11 @@ class SignUpSubmitted extends SignUpEvent {
     required this.name,
     required this.email,
     required this.password,
+    required this.profileImage,
   });
 
   final String name;
   final String email;
   final String password;
+  final File profileImage;
 }

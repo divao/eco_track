@@ -38,6 +38,7 @@
   "signUpPasswordConfirmationEmptyError": "A confirmação de senha não pode ser vazia",
   "signUpPasswordConfirmationInvalidError": "As senhas não são iguais, tente novamente",
   "signUpPageSignUpButton": "Cadastrar",
+  "signUpPageUploadPhotoButton": "Carregar foto",
   "permissionsInfoDialogTitle": "Informativo",
   "permissionsInfoDialogContent": "EcoTrack é um app que fomenta o turismo pelo meio ambiente. Ao postar uma foto, a sua localização será marcada para possibilitar que outros usuários visualizem e visitem o mesmo local.\nPortanto, para postar fotos, é necessário conceder as permissões de localização e câmera.",
   "flushbarPermissionsErrorMessage": "Alguma permissão não foi concedida, tente novamente!",

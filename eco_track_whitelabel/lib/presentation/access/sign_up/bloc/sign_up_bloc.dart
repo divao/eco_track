@@ -218,6 +218,7 @@ class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {
           name: event.name,
           email: event.email,
           password: event.password,
+          profileImage: event.profileImage,
         ),
       );
       emit(

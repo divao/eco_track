@@ -80,9 +80,11 @@ final authRDSProvider = Provider<AuthRDS>((ref) {
 final userRDSProvider = Provider<UserRDS>((ref) {
   final firebaseFirestore = ref.watch(firebaseFirestoreProvider);
   final firebaseAuth = ref.watch(firebaseAuthProvider);
+  final firebaseStorage = ref.watch(firebaseStorageProvider);
   return UserRDS(
     firebaseFirestore: firebaseFirestore,
     firebaseAuth: firebaseAuth,
+    firebaseStorage: firebaseStorage,
   );
 });
 

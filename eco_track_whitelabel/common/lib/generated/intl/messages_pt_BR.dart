@@ -87,6 +87,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "signUpPageSignUpButton":
             MessageLookupByLibrary.simpleMessage("Cadastrar"),
         "signUpPageTitle": MessageLookupByLibrary.simpleMessage("Cadastro"),
+        "signUpPageUploadPhotoButton":
+            MessageLookupByLibrary.simpleMessage("Carregar foto"),
         "signUpPasswordConfirmationEmptyError":
             MessageLookupByLibrary.simpleMessage(
                 "A confirmação de senha não pode ser vazia"),
