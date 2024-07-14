@@ -1,7 +1,5 @@
 import 'package:common/presentation/common/app_theme/theme_extension.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:eco_track_whitelabel/common/routing.dart';
-import 'package:eco_track_whitelabel/presentation/common/eco_button.dart';
 import 'package:eco_track_whitelabel/presentation/common/handler/dialog_handler.dart';
 import 'package:eco_track_whitelabel/presentation/common/handler/flushbar_handler.dart';
 import 'package:eco_track_whitelabel/presentation/common/state_response_view.dart';
@@ -10,6 +8,7 @@ import 'package:eco_track_whitelabel/presentation/eco_scaffold.dart';
 import 'package:eco_track_whitelabel/presentation/main_navigation/feed/bloc/feed_bloc.dart';
 import 'package:eco_track_whitelabel/presentation/main_navigation/feed/bloc/feed_event.dart';
 import 'package:eco_track_whitelabel/presentation/main_navigation/feed/bloc/feed_state.dart';
+import 'package:eco_track_whitelabel/presentation/main_navigation/feed/widgets/feed_post_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -71,10 +70,11 @@ class _FeedPageState extends ConsumerState<FeedPage> {
       title: ref.s.appTitle,
       body: BlocConsumer<FeedBloc, FeedState>(
           bloc: _bloc,
-          listener: (context, state) {
+          listener: (context, state) async {
             if (state is Success) {
               if (state.getGeolocationStatus == GetGeolocationStatus.success) {
-                ref.goRouter.goPost(geolocation: state.geolocation!);
+                await ref.goRouter.pushPost(geolocation: state.geolocation!);
+                _bloc.add(GetFeed());
               } else if (state.getGeolocationStatus ==
                   GetGeolocationStatus.error) {
                 FlushbarHandler.instance
@@ -93,28 +93,28 @@ class _FeedPageState extends ConsumerState<FeedPage> {
                     children: [
                       ListView.builder(
                         itemCount: postList.length,
-                        itemBuilder: (context, index) => Column(
-                          children: [
-                            Text(postList[index].name),
-                            CachedNetworkImage(
-                              imageUrl: postList[index].imageUrl,
-                              height: 200,
-                            ),
-                            Text(postList[index].description),
-                            Text(
-                                '${postList[index].geolocation.latitude}, ${postList[index].geolocation.longitude}'),
-                          ],
+                        itemBuilder: (context, index) => FeedPostItem(
+                          feedPost: postList[index],
+                          isLast: index == postList.length - 1,
                         ),
                       ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          EcoButton(
-                              text: 'Postar',
-                              onPressed: () {
-                                _requestPermissions();
-                              }),
-                        ],
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 16.0),
+                        child: SizedBox(
+                          height: 60,
+                          width: 60,
+                          child: IconButton(
+                            icon: const Icon(Icons.camera_alt_outlined),
+                            iconSize: 36,
+                            style: IconButton.styleFrom(
+                              foregroundColor: ref.colors.surfaceColor,
+                              backgroundColor: ref.colors.primaryColor,
+                            ),
+                            onPressed: () {
+                              _requestPermissions();
+                            },
+                          ),
+                        ),
                       ),
                     ],
                   );

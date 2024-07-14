@@ -6,7 +6,8 @@ import 'package:eco_track_whitelabel/data/view/model/feed_post_vm.dart';
 extension FeedPostDMMappers on FeedPost {
   FeedPostVM toVM() => FeedPostVM(
     name: name,
-    imageUrl: imageUrl,
+    profileImageUrl: profileImageUrl,
+    postImageUrl: postImageUrl,
     description: description,
     geolocation: geolocation.toVM(),
   );

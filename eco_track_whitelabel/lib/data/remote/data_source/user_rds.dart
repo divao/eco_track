@@ -31,6 +31,7 @@ class UserRDS {
           .set(
         {
           'name': name,
+          'imageUrl': 'profileImages/defaultProfilePic.jpeg',
         },
       );
     } catch (e) {
@@ -53,9 +54,11 @@ class UserRDS {
         final data = response.data()!;
         final {
         'name': String name,
+        'imageUrl': String imageUrl,
         } = data;
         return UserProfileRM(
           name: name,
+          imageUrl: imageUrl,
         );
       });
     } catch (e) {

@@ -8,13 +8,15 @@ import 'package:eco_track_whitelabel/data/remote/model/user_profile_rm.dart';
 extension UserProfileRMMappers on UserProfileRM {
   UserProfile toDM() => UserProfile(
     name: name,
+    imageUrl: imageUrl,
   );
 }
 
 extension FeedPostRMMappers on FeedPostRM {
   FeedPost toDM() => FeedPost(
     name: name,
-    imageUrl: imageUrl,
+    profileImageUrl: profileImageUrl,
+    postImageUrl: postImageUrl,
     description: description,
     geolocation: geolocation.toDM(),
   );

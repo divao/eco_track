@@ -123,11 +123,11 @@ extension PageNavigationExtension on GoRouter {
 
   void goProfile() => go(_profilePath);
 
-  void goPost({required Geolocation geolocation}) {
+  Future<void> pushPost({required Geolocation geolocation}) async {
     final postPath = _postPath
         .replaceFirst(':latitude', geolocation.latitude.toString())
         .replaceFirst(':longitude', geolocation.longitude.toString());
-    go(postPath);
+    await push(postPath);
   }
 }
 

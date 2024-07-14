@@ -22,29 +22,46 @@ class FeedRDS {
   final FirebaseAuth _auth;
 
   static const _postsCollection = 'posts';
+  static const _profilesCollection = 'profiles';
 
   Future<List<FeedPostRM>> getFeedPosts() => _firestore
           .collection(_postsCollection)
+          .orderBy('createdAt', descending: true)
           .get()
           .then((snapshot) async {
         final postList = <FeedPostRM>[];
         for (final doc in snapshot.docs) {
           final data = doc.data();
           final {
-            'name': String name,
-            'imageUrl': String imageUrl,
+            'userUid': String userUid,
+            'imageUrl': String postImageUrl,
             'description': String description,
             'geolocation': GeoPoint geolocation,
           } = data;
-          final image =
-              await getResourceUrlFromStorage(_storage, imageUrl);
-          final postRM = FeedPostRM(
-            name: name,
-            imageUrl: image,
-            description: description,
-            geolocation: geolocation,
-          );
-          postList.add(postRM);
+          final postImage =
+              await getResourceUrlFromStorage(_storage, postImageUrl);
+
+          await _firestore
+              .collection(_profilesCollection)
+              .doc(userUid)
+              .get()
+              .then((response) async {
+            final data = response.data()!;
+            final {
+              'name': String name,
+              'imageUrl': String profileImageUrl,
+            } = data;
+            final profileImage =
+                await getResourceUrlFromStorage(_storage, profileImageUrl);
+            final postRM = FeedPostRM(
+              name: name,
+              profileImageUrl: profileImage,
+              postImageUrl: postImage,
+              description: description,
+              geolocation: geolocation,
+            );
+            postList.add(postRM);
+          });
         }
         return postList;
       }).catchError((e) {
@@ -57,20 +74,21 @@ class FeedRDS {
     required Geolocation geolocation,
   }) async {
     final userUid = _auth.currentUser!.uid;
-    final imageUrl = 'postImages/$userUid/${DateTime.now()}';
+    final dateTimeNow = DateTime.now();
+    final imageUrl = 'postImages/$userUid/$dateTimeNow';
     final imageRef = _storage.ref().child(imageUrl);
     try {
       await imageRef.putFile(file);
       final geoPoint = GeoPoint(geolocation.latitude, geolocation.longitude);
       await _firestore.collection(_postsCollection).add({
-        // TODO: trocar isso aqui
-        'name': 'Teste legal',
+        'userUid': userUid,
         'imageUrl': imageUrl,
         'description': description,
         'geolocation': geoPoint,
+        'createdAt': dateTimeNow,
       });
     } catch (e) {
-      throw UnexpectedException();
+      throw ResponseParseException();
     }
   }
 }

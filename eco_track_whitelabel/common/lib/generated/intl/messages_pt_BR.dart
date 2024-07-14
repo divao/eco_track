@@ -38,6 +38,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Não foi possível obter a localização, tente novamente!"),
         "flushbarPermissionsErrorMessage": MessageLookupByLibrary.simpleMessage(
             "Alguma permissão não foi concedida, tente novamente!"),
+        "flushbarPostErrorMessage": MessageLookupByLibrary.simpleMessage(
+            "Erro ao postar a foto, tente novamente!"),
         "flushbarServerErrorMessage": MessageLookupByLibrary.simpleMessage(
             "Ocorreu um erro, tente novamente!"),
         "genericError":
@@ -49,6 +51,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "permissionsInfoDialogTitle":
             MessageLookupByLibrary.simpleMessage("Informativo"),
         "postButton": MessageLookupByLibrary.simpleMessage("Postar"),
+        "postDescriptionHintText":
+            MessageLookupByLibrary.simpleMessage("Legenda (opcional)"),
+        "postDescriptionLabel": MessageLookupByLibrary.simpleMessage("Legenda"),
+        "postLocationLabel":
+            MessageLookupByLibrary.simpleMessage("Ver no Maps"),
         "postPreviewTitle": MessageLookupByLibrary.simpleMessage("Postar"),
         "signInEmailHintText":
             MessageLookupByLibrary.simpleMessage("Digite seu e-mail"),

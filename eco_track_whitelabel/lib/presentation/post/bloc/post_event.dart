@@ -10,4 +10,10 @@ class TakePhoto extends PostEvent {
   final File file;
 }
 
-class Post extends PostEvent {}
+class Post extends PostEvent {
+  Post({
+    required this.description,
+  });
+
+  final String description;
+}

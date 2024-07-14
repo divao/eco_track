@@ -53,7 +53,7 @@ class PostBloc extends Bloc<PostEvent, PostState> {
       await _postFeedPostUC.getFuture(
         PostFeedPostUCParams(
           file: state.file!,
-          description: 'Teste bacana',
+          description: event.description,
           geolocation: _geolocation,
         ),
       );

@@ -38,6 +38,7 @@ class AuthRepository extends AuthDataRepository {
     try {
       await _userRDS.setUserAdditionalData(
         name: name,
+
       );
     } catch (e) {
       await _authRDS.deleteUser(

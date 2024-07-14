@@ -151,4 +151,25 @@ class FlushbarHandler {
       borderWidth: 1,
     );
   }
+
+  Future<void> postErrorFlushbar(
+      BuildContext context, {
+        required WidgetRef ref,
+      }) async {
+    _displayFlushBar(
+      ref: ref,
+      context: context,
+      message: Text(
+        ref.s.flushbarPostErrorMessage,
+        style: ref.textStyles.flushBarError,
+      ),
+      leftBarIndicatorColor: Colors.transparent,
+      duration: const Duration(seconds: 2),
+      backgroundColor: ref.colors.flushbarBackgroundColor,
+      flushbarPosition: FlushbarPosition.BOTTOM,
+      borderWidth: 1,
+    );
+  }
+
+
 }

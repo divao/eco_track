@@ -42,6 +42,10 @@
   "permissionsInfoDialogContent": "EcoTrack é um app que fomenta o turismo pelo meio ambiente. Ao postar uma foto, a sua localização será marcada para possibilitar que outros usuários visualizem e visitem o mesmo local.\nPortanto, para postar fotos, é necessário conceder as permissões de localização e câmera.",
   "flushbarPermissionsErrorMessage": "Alguma permissão não foi concedida, tente novamente!",
   "flushbarGeolocationErrorMessage": "Não foi possível obter a localização, tente novamente!",
+  "flushbarPostErrorMessage": "Erro ao postar a foto, tente novamente!",
   "postPreviewTitle": "Postar",
-  "postButton": "Postar"
+  "postButton": "Postar",
+  "postLocationLabel": "Ver no Maps",
+  "postDescriptionLabel": "Legenda",
+  "postDescriptionHintText": "Legenda (opcional)"
 }

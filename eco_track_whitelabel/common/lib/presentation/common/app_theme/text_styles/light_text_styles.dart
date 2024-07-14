@@ -146,4 +146,30 @@ class LightTextStyles implements AppTextStyles {
     fontWeight: FontWeight.w600,
     fontFamily: _montserratFontFamily,
   );
+
+  // Feed
+
+  @override
+  TextStyle get feedPostUserName => const TextStyle(
+    color: _black,
+    fontSize: 17,
+    fontWeight: FontWeight.w500,
+    fontFamily: _montserratFontFamily,
+  );
+
+  @override
+  TextStyle get feedPostDescription => const TextStyle(
+    color: _black,
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+    fontFamily: _montserratFontFamily,
+  );
+
+  @override
+  TextStyle get feedPostGeolocation => const TextStyle(
+    color: _cerulean,
+    fontSize: 15,
+    fontWeight: FontWeight.w400,
+    fontFamily: _montserratFontFamily,
+  );
 }

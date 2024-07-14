@@ -3,6 +3,8 @@ import 'package:common/presentation/common/app_theme/theme_extension.dart';
 import 'package:domain/model/geolocation.dart';
 import 'package:eco_track_whitelabel/common/routing.dart';
 import 'package:eco_track_whitelabel/presentation/common/eco_button.dart';
+import 'package:eco_track_whitelabel/presentation/common/eco_text_field.dart';
+import 'package:eco_track_whitelabel/presentation/common/handler/flushbar_handler.dart';
 import 'package:eco_track_whitelabel/presentation/common/utils/status/post_status.dart';
 import 'package:eco_track_whitelabel/presentation/eco_scaffold.dart';
 import 'package:eco_track_whitelabel/presentation/post/bloc/post_bloc.dart';
@@ -34,6 +36,17 @@ class PostPage extends ConsumerStatefulWidget {
 class _PostPageState extends ConsumerState<PostPage> {
   PostBloc get _bloc => widget.bloc;
 
+  final _descriptionController = TextEditingController();
+
+  final _descriptionFocusNode = FocusNode();
+
+  @override
+  void dispose() {
+    _descriptionController.dispose();
+    _descriptionFocusNode.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<PostBloc, PostState>(
@@ -41,15 +54,14 @@ class _PostPageState extends ConsumerState<PostPage> {
       listenWhen: (previous, current) => previous.status != current.status,
       listener: (context, state) {
         if (state.status == PostStatus.success) {
-          ref.goRouter.goFeed();
+          ref.goRouter.pop();
         } else if (state.status == PostStatus.error) {
-          // show error
+          FlushbarHandler.instance.postErrorFlushbar(context, ref: ref);
         }
       },
       builder: (context, state) {
         if (state.status == PostStatus.camera) {
           return CameraCamera(
-            mode: CameraMode.ratio4s3,
             resolutionPreset: ResolutionPreset.high,
             onFile: (file) {
               _bloc.add(TakePhoto(file: file));
@@ -58,18 +70,46 @@ class _PostPageState extends ConsumerState<PostPage> {
         } else if (state.status == PostStatus.preview) {
           return EcoScaffold(
             title: ref.s.postPreviewTitle,
-            body: SingleChildScrollView(
+            body: Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(16),
               child: Column(
                 children: [
-                  Image.file(
-                    state.file!,
-                    width: MediaQuery.of(context).size.width,
+                  Expanded(
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: [
+                          Image.file(
+                            state.file!,
+                            width: MediaQuery.of(context).size.width / 2,
+                          ),
+                          const SizedBox(height: 16),
+                          EcoTextField(
+                            controller: _descriptionController,
+                            focusNode: _descriptionFocusNode,
+                            onEditingComplete: () =>
+                                FocusScope.of(context).unfocus(),
+                            labelText: s.postDescriptionLabel,
+                            hintText: s.postDescriptionHintText,
+                            textInputAction: TextInputAction.done,
+                            keyboardType: TextInputType.text,
+                          ),
+                          const SizedBox(height: 16),
+                        ],
+                      ),
+                    ),
                   ),
-                  EcoButton(
-                    text: ref.s.postButton,
-                    onPressed: () {
-                      _bloc.add(Post());
-                    },
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      EcoButton(
+                        text: ref.s.postButton,
+                        onPressed: () {
+                          _bloc.add(
+                              Post(description: _descriptionController.text));
+                        },
+                      ),
+                    ],
                   ),
                 ],
               ),

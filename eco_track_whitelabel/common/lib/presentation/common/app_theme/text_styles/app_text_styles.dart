@@ -49,4 +49,12 @@ abstract class AppTextStyles {
 
   TextStyle get dialogButtonTextStyle;
 
+  // Feed
+
+  TextStyle get feedPostUserName;
+
+  TextStyle get feedPostDescription;
+
+  TextStyle get feedPostGeolocation;
+
 }

@@ -470,6 +470,16 @@ class S {
     );
   }
 
+  /// `Erro ao postar a foto, tente novamente!`
+  String get flushbarPostErrorMessage {
+    return Intl.message(
+      'Erro ao postar a foto, tente novamente!',
+      name: 'flushbarPostErrorMessage',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Postar`
   String get postPreviewTitle {
     return Intl.message(
@@ -485,6 +495,36 @@ class S {
     return Intl.message(
       'Postar',
       name: 'postButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ver no Maps`
+  String get postLocationLabel {
+    return Intl.message(
+      'Ver no Maps',
+      name: 'postLocationLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Legenda`
+  String get postDescriptionLabel {
+    return Intl.message(
+      'Legenda',
+      name: 'postDescriptionLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Legenda (opcional)`
+  String get postDescriptionHintText {
+    return Intl.message(
+      'Legenda (opcional)',
+      name: 'postDescriptionHintText',
       desc: '',
       args: [],
     );
