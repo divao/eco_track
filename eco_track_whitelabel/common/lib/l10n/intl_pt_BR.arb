@@ -39,5 +39,9 @@
   "signUpPasswordConfirmationInvalidError": "As senhas não são iguais, tente novamente",
   "signUpPageSignUpButton": "Cadastrar",
   "permissionsInfoDialogTitle": "Informativo",
-  "permissionsInfoDialogContent": "EcoTrack é um app que fomenta o turismo pelo meio ambiente. Ao postar uma foto, a sua localização será marcada para possibilitar que outros usuários visualizem e visitem o mesmo local.\nPortanto, para postar fotos, é necessário conceder as permissões de localização e câmera."
+  "permissionsInfoDialogContent": "EcoTrack é um app que fomenta o turismo pelo meio ambiente. Ao postar uma foto, a sua localização será marcada para possibilitar que outros usuários visualizem e visitem o mesmo local.\nPortanto, para postar fotos, é necessário conceder as permissões de localização e câmera.",
+  "flushbarPermissionsErrorMessage": "Alguma permissão não foi concedida, tente novamente!",
+  "flushbarGeolocationErrorMessage": "Não foi possível obter a localização, tente novamente!",
+  "postPreviewTitle": "Postar",
+  "postButton": "Postar"
 }

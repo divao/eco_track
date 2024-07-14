@@ -34,6 +34,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "confirm": MessageLookupByLibrary.simpleMessage("OK"),
         "flushbarEmailErrorMessage": MessageLookupByLibrary.simpleMessage(
             "O email informado já está em uso!"),
+        "flushbarGeolocationErrorMessage": MessageLookupByLibrary.simpleMessage(
+            "Não foi possível obter a localização, tente novamente!"),
+        "flushbarPermissionsErrorMessage": MessageLookupByLibrary.simpleMessage(
+            "Alguma permissão não foi concedida, tente novamente!"),
         "flushbarServerErrorMessage": MessageLookupByLibrary.simpleMessage(
             "Ocorreu um erro, tente novamente!"),
         "genericError":
@@ -44,6 +48,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "EcoTrack é um app que fomenta o turismo pelo meio ambiente. Ao postar uma foto, a sua localização será marcada para possibilitar que outros usuários visualizem e visitem o mesmo local.\nPortanto, para postar fotos, é necessário conceder as permissões de localização e câmera."),
         "permissionsInfoDialogTitle":
             MessageLookupByLibrary.simpleMessage("Informativo"),
+        "postButton": MessageLookupByLibrary.simpleMessage("Postar"),
+        "postPreviewTitle": MessageLookupByLibrary.simpleMessage("Postar"),
         "signInEmailHintText":
             MessageLookupByLibrary.simpleMessage("Digite seu e-mail"),
         "signInEmailLabel": MessageLookupByLibrary.simpleMessage("E-mail"),

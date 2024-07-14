@@ -9,6 +9,7 @@ import 'package:domain/use_case/delete_user_uc.dart';
 import 'package:domain/use_case/get_feed_posts_uc.dart';
 import 'package:domain/use_case/get_location_uc.dart';
 import 'package:domain/use_case/get_user_profile_uc.dart';
+import 'package:domain/use_case/post_feed_post_uc.dart';
 import 'package:domain/use_case/sign_in_uc.dart';
 import 'package:domain/use_case/sign_out_uc.dart';
 import 'package:domain/use_case/sign_up_uc.dart';
@@ -88,9 +89,11 @@ final userRDSProvider = Provider<UserRDS>((ref) {
 final feedRDSProvider = Provider<FeedRDS>((ref) {
   final firebaseFirestore = ref.watch(firebaseFirestoreProvider);
   final firebaseStorage = ref.watch(firebaseStorageProvider);
+  final firebaseAuth = ref.watch(firebaseAuthProvider);
   return FeedRDS(
     firebaseFirestore: firebaseFirestore,
     firebaseStorage: firebaseStorage,
+    firebaseAuth: firebaseAuth,
   );
 });
 
@@ -199,4 +202,14 @@ final getLocationUCProvider = Provider<GetLocationUC>((ref) {
     logger: logger,
   );
 });
+
+final postFeedPostUCProvider = Provider<PostFeedPostUC>((ref) {
+  final logger = ref.watch(errorLoggerProvider);
+  final repository = ref.watch(feedRepositoryProvider);
+  return PostFeedPostUC(
+    logger: logger,
+    feedDataRepository: repository,
+  );
+});
+
 

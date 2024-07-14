@@ -449,6 +449,46 @@ class S {
       args: [],
     );
   }
+
+  /// `Alguma permissão não foi concedida, tente novamente!`
+  String get flushbarPermissionsErrorMessage {
+    return Intl.message(
+      'Alguma permissão não foi concedida, tente novamente!',
+      name: 'flushbarPermissionsErrorMessage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Não foi possível obter a localização, tente novamente!`
+  String get flushbarGeolocationErrorMessage {
+    return Intl.message(
+      'Não foi possível obter a localização, tente novamente!',
+      name: 'flushbarGeolocationErrorMessage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Postar`
+  String get postPreviewTitle {
+    return Intl.message(
+      'Postar',
+      name: 'postPreviewTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Postar`
+  String get postButton {
+    return Intl.message(
+      'Postar',
+      name: 'postButton',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

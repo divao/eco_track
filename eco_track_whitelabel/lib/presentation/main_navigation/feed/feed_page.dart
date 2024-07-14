@@ -1,7 +1,6 @@
-import 'dart:ffi';
-
 import 'package:common/presentation/common/app_theme/theme_extension.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:eco_track_whitelabel/common/routing.dart';
 import 'package:eco_track_whitelabel/presentation/common/eco_button.dart';
 import 'package:eco_track_whitelabel/presentation/common/handler/dialog_handler.dart';
 import 'package:eco_track_whitelabel/presentation/common/handler/flushbar_handler.dart';
@@ -45,17 +44,21 @@ class _FeedPageState extends ConsumerState<FeedPage> {
   }
 
   void _requestPermissions() {
-    DialogHandler.instance.showPermissionsInfoDialog(context, ref, onConfirmPressed: () {
+    DialogHandler.instance.showPermissionsInfoDialog(context, ref,
+        onConfirmPressed: () {
       [Permission.location, Permission.camera].request().then(
-            (statusMap) {
+        (statusMap) {
           if (statusMap[Permission.location] == PermissionStatus.granted &&
               statusMap[Permission.camera] == PermissionStatus.granted) {
             _bloc.add(GetGeolocation());
           } else if (statusMap[Permission.location] ==
-              PermissionStatus.permanentlyDenied ||
+                  PermissionStatus.permanentlyDenied ||
               statusMap[Permission.camera] ==
                   PermissionStatus.permanentlyDenied) {
             openAppSettings();
+          } else {
+            FlushbarHandler.instance
+                .permissionsDeniedFlushbar(context, ref: ref);
           }
         },
       );
@@ -70,14 +73,12 @@ class _FeedPageState extends ConsumerState<FeedPage> {
           bloc: _bloc,
           listener: (context, state) {
             if (state is Success) {
-              if (state.getGeolocationStatus ==
-                  GetGeolocationStatus.success) {
-                // vai pra page
-                FlushbarHandler.instance.emailAlreadyUsedErrorFlushbar(context, ref: ref);
+              if (state.getGeolocationStatus == GetGeolocationStatus.success) {
+                ref.goRouter.goPost(geolocation: state.geolocation!);
               } else if (state.getGeolocationStatus ==
                   GetGeolocationStatus.error) {
-                // mostra erro
-                FlushbarHandler.instance.serverErrorFlushbar(context, ref: ref);
+                FlushbarHandler.instance
+                    .geolocationErrorFlushbar(context, ref: ref);
               }
             }
           },
