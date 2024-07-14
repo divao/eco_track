@@ -57,4 +57,10 @@ abstract class AppTextStyles {
 
   TextStyle get feedPostGeolocation;
 
+  // Profile
+
+  TextStyle get profileName;
+
+  TextStyle get profileEmail;
+
 }

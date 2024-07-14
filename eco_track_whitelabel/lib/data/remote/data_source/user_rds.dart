@@ -3,6 +3,7 @@ import 'dart:ui';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:domain/exceptions.dart';
+import 'package:eco_track_whitelabel/common/utils.dart';
 import 'package:eco_track_whitelabel/data/remote/model/user_profile_rm.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -64,9 +65,12 @@ class UserRDS {
           'name': String name,
           'imageUrl': String imageUrl,
         } = data;
+        final profileImage =
+        await getResourceUrlFromStorage(_storage, imageUrl);
         return UserProfileRM(
           name: name,
-          imageUrl: imageUrl,
+          email: user.email!,
+          imageUrl: profileImage,
         );
       });
     } catch (e) {

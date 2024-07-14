@@ -5,6 +5,7 @@ import 'package:eco_track_whitelabel/presentation/access/sign_in/sign_in_page.da
 import 'package:eco_track_whitelabel/presentation/access/sign_up/sign_up_page.dart';
 import 'package:eco_track_whitelabel/presentation/home_navigation_page.dart';
 import 'package:eco_track_whitelabel/presentation/main_navigation/feed/feed_page.dart';
+import 'package:eco_track_whitelabel/presentation/main_navigation/profile/profile_page.dart';
 import 'package:eco_track_whitelabel/presentation/post/post_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -92,11 +93,7 @@ final goRouterProvider = Provider.autoDispose<GoRouter>(
               routes: [
                 GoRoute(
                   path: _profilePath,
-                  builder: (context, state) => const Scaffold(
-                    body: Center(
-                      child: Text('Profile'),
-                    ),
-                  ),
+                  builder: (context, state) => ProfilePage.create(),
                 ),
               ],
             ),

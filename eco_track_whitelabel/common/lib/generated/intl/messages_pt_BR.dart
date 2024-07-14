@@ -32,6 +32,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "bottomNavigationProfileItem":
             MessageLookupByLibrary.simpleMessage("Perfil"),
         "confirm": MessageLookupByLibrary.simpleMessage("OK"),
+        "deleteAccountButton":
+            MessageLookupByLibrary.simpleMessage("Excluir conta"),
+        "editProfileButton":
+            MessageLookupByLibrary.simpleMessage("Editar perfil"),
         "flushbarEmailErrorMessage": MessageLookupByLibrary.simpleMessage(
             "O email informado já está em uso!"),
         "flushbarGeolocationErrorMessage": MessageLookupByLibrary.simpleMessage(
@@ -44,6 +48,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Ocorreu um erro, tente novamente!"),
         "genericError":
             MessageLookupByLibrary.simpleMessage("Algo deu errado."),
+        "logoutButton": MessageLookupByLibrary.simpleMessage("Sair"),
         "noInternetError":
             MessageLookupByLibrary.simpleMessage("Sem conexão com a internet."),
         "permissionsInfoDialogContent": MessageLookupByLibrary.simpleMessage(
@@ -57,6 +62,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "postLocationLabel":
             MessageLookupByLibrary.simpleMessage("Ver no Maps"),
         "postPreviewTitle": MessageLookupByLibrary.simpleMessage("Postar"),
+        "profilePageTitle": MessageLookupByLibrary.simpleMessage("Perfil"),
         "signInEmailHintText":
             MessageLookupByLibrary.simpleMessage("Digite seu e-mail"),
         "signInEmailLabel": MessageLookupByLibrary.simpleMessage("E-mail"),

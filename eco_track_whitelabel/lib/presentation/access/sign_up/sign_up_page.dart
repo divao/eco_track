@@ -152,10 +152,10 @@ class _SignUpPageState extends ConsumerState<SignUpPage> {
                       children: [
                         imageFile != null
                             ? CircleAvatar(
-                                radius: 60,
+                                radius: 54,
                                 backgroundImage: FileImage(imageFile!))
                             : CircleAvatar(
-                                radius: 60,
+                                radius: 54,
                                 backgroundImage: AssetImage(
                                     ref.assets.profilePlaceholderImage),
                               ),

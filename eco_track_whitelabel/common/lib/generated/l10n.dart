@@ -539,6 +539,46 @@ class S {
       args: [],
     );
   }
+
+  /// `Perfil`
+  String get profilePageTitle {
+    return Intl.message(
+      'Perfil',
+      name: 'profilePageTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Editar perfil`
+  String get editProfileButton {
+    return Intl.message(
+      'Editar perfil',
+      name: 'editProfileButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Excluir conta`
+  String get deleteAccountButton {
+    return Intl.message(
+      'Excluir conta',
+      name: 'deleteAccountButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sair`
+  String get logoutButton {
+    return Intl.message(
+      'Sair',
+      name: 'logoutButton',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

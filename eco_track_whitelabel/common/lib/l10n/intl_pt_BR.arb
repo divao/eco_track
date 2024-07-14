@@ -48,5 +48,9 @@
   "postButton": "Postar",
   "postLocationLabel": "Ver no Maps",
   "postDescriptionLabel": "Legenda",
-  "postDescriptionHintText": "Legenda (opcional)"
+  "postDescriptionHintText": "Legenda (opcional)",
+  "profilePageTitle": "Perfil",
+  "editProfileButton": "Editar perfil",
+  "deleteAccountButton": "Excluir conta",
+  "logoutButton": "Sair"
 }
