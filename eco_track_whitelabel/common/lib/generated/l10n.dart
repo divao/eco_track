@@ -60,6 +60,36 @@ class S {
     );
   }
 
+  /// `OK`
+  String get confirm {
+    return Intl.message(
+      'OK',
+      name: 'confirm',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `SIM`
+  String get yes {
+    return Intl.message(
+      'SIM',
+      name: 'yes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `NÃO`
+  String get no {
+    return Intl.message(
+      'NÃO',
+      name: 'no',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Feed`
   String get bottomNavigationFeedItem {
     return Intl.message(
@@ -145,6 +175,46 @@ class S {
     return Intl.message(
       'O email informado já está em uso!',
       name: 'flushbarEmailErrorMessage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Algo deu errado.`
+  String get genericError {
+    return Intl.message(
+      'Algo deu errado.',
+      name: 'genericError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Erro interno do servidor.`
+  String get timeoutError {
+    return Intl.message(
+      'Erro interno do servidor.',
+      name: 'timeoutError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sem conexão com a internet.`
+  String get noInternetError {
+    return Intl.message(
+      'Sem conexão com a internet.',
+      name: 'noInternetError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `TENTAR NOVAMENTE`
+  String get tryAgain {
+    return Intl.message(
+      'TENTAR NOVAMENTE',
+      name: 'tryAgain',
       desc: '',
       args: [],
     );
@@ -375,6 +445,236 @@ class S {
     return Intl.message(
       'Cadastrar',
       name: 'signUpPageSignUpButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Carregar foto`
+  String get signUpPageUploadPhotoButton {
+    return Intl.message(
+      'Carregar foto',
+      name: 'signUpPageUploadPhotoButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Informativo`
+  String get permissionsInfoDialogTitle {
+    return Intl.message(
+      'Informativo',
+      name: 'permissionsInfoDialogTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `EcoTrack é um app que fomenta o turismo pelo meio ambiente. Ao postar uma foto, a sua localização será marcada para possibilitar que outros usuários visualizem e visitem o mesmo local.\nPortanto, para postar fotos, é necessário conceder as permissões de localização e câmera.`
+  String get permissionsInfoDialogContent {
+    return Intl.message(
+      'EcoTrack é um app que fomenta o turismo pelo meio ambiente. Ao postar uma foto, a sua localização será marcada para possibilitar que outros usuários visualizem e visitem o mesmo local.\nPortanto, para postar fotos, é necessário conceder as permissões de localização e câmera.',
+      name: 'permissionsInfoDialogContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Alguma permissão não foi concedida, tente novamente!`
+  String get flushbarPermissionsErrorMessage {
+    return Intl.message(
+      'Alguma permissão não foi concedida, tente novamente!',
+      name: 'flushbarPermissionsErrorMessage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Não foi possível obter a localização, tente novamente!`
+  String get flushbarGeolocationErrorMessage {
+    return Intl.message(
+      'Não foi possível obter a localização, tente novamente!',
+      name: 'flushbarGeolocationErrorMessage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Erro ao postar a foto, tente novamente!`
+  String get flushbarPostErrorMessage {
+    return Intl.message(
+      'Erro ao postar a foto, tente novamente!',
+      name: 'flushbarPostErrorMessage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Postar`
+  String get postPreviewTitle {
+    return Intl.message(
+      'Postar',
+      name: 'postPreviewTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Postar`
+  String get postButton {
+    return Intl.message(
+      'Postar',
+      name: 'postButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ver no Maps`
+  String get postLocationLabel {
+    return Intl.message(
+      'Ver no Maps',
+      name: 'postLocationLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Legenda`
+  String get postDescriptionLabel {
+    return Intl.message(
+      'Legenda',
+      name: 'postDescriptionLabel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Legenda (opcional)`
+  String get postDescriptionHintText {
+    return Intl.message(
+      'Legenda (opcional)',
+      name: 'postDescriptionHintText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Perfil`
+  String get profilePageTitle {
+    return Intl.message(
+      'Perfil',
+      name: 'profilePageTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Editar perfil`
+  String get editProfileButton {
+    return Intl.message(
+      'Editar perfil',
+      name: 'editProfileButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Excluir conta`
+  String get deleteAccountButton {
+    return Intl.message(
+      'Excluir conta',
+      name: 'deleteAccountButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sair`
+  String get logoutButton {
+    return Intl.message(
+      'Sair',
+      name: 'logoutButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Editar perfil`
+  String get editProfilePageTitle {
+    return Intl.message(
+      'Editar perfil',
+      name: 'editProfilePageTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Salvar`
+  String get editProfilePageSubmitButton {
+    return Intl.message(
+      'Salvar',
+      name: 'editProfilePageSubmitButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Logout`
+  String get signOutDialogTitle {
+    return Intl.message(
+      'Logout',
+      name: 'signOutDialogTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Deseja realmente sair?`
+  String get signOutDialogContent {
+    return Intl.message(
+      'Deseja realmente sair?',
+      name: 'signOutDialogContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Excluir conta`
+  String get deleteUserDialogTitle {
+    return Intl.message(
+      'Excluir conta',
+      name: 'deleteUserDialogTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Deseja realmente excluir sua conta?`
+  String get deleteUserDialogContent {
+    return Intl.message(
+      'Deseja realmente excluir sua conta?',
+      name: 'deleteUserDialogContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Erro ao sair, tente novamente!`
+  String get flushbarSignOutErrorMessage {
+    return Intl.message(
+      'Erro ao sair, tente novamente!',
+      name: 'flushbarSignOutErrorMessage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Erro ao excluir a conta, tente novamente!`
+  String get flushbarDeleteUserErrorMessage {
+    return Intl.message(
+      'Erro ao excluir a conta, tente novamente!',
+      name: 'flushbarDeleteUserErrorMessage',
       desc: '',
       args: [],
     );

@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:domain/data_repository/auth_data_repository.dart';
 import 'package:domain/model/user_profile.dart';
 import 'package:eco_track_whitelabel/data/mappers/remote_to_domain.dart';
@@ -30,6 +32,7 @@ class AuthRepository extends AuthDataRepository {
     required String name,
     required String email,
     required String password,
+    required File profileImage,
   }) async {
     await _authRDS.signUp(
       email: email,
@@ -38,6 +41,7 @@ class AuthRepository extends AuthDataRepository {
     try {
       await _userRDS.setUserAdditionalData(
         name: name,
+        profileImage: profileImage,
       );
     } catch (e) {
       await _authRDS.deleteUser(
@@ -65,5 +69,12 @@ class AuthRepository extends AuthDataRepository {
       _authRDS.deleteUser(
         deleteData: deleteData,
         password: password,
+      );
+
+  @override
+  Future<void> editProfile({String? name, File? profileImage}) async =>
+      _userRDS.editProfile(
+        name: name,
+        profileImage: profileImage,
       );
 }

@@ -7,4 +7,6 @@ abstract class AppAssetsPaths {
 
   String get logoImage;
 
+  String get profilePlaceholderImage;
+
 }

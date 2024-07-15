@@ -1,22 +1,42 @@
+import 'package:domain/model/geolocation.dart';
+import 'package:domain/model/user_profile.dart';
 import 'package:eco_track_whitelabel/common/providers/general_provider.dart';
 import 'package:eco_track_whitelabel/presentation/access/access_page.dart';
 import 'package:eco_track_whitelabel/presentation/access/sign_in/sign_in_page.dart';
 import 'package:eco_track_whitelabel/presentation/access/sign_up/sign_up_page.dart';
-import 'package:eco_track_whitelabel/presentation/home/home_page.dart';
+import 'package:eco_track_whitelabel/presentation/edit_profile/edit_profile_page.dart';
 import 'package:eco_track_whitelabel/presentation/home_navigation_page.dart';
+import 'package:eco_track_whitelabel/presentation/main_navigation/feed/feed_page.dart';
+import 'package:eco_track_whitelabel/presentation/main_navigation/profile/profile_page.dart';
+import 'package:eco_track_whitelabel/presentation/post/post_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 const _slash = '/';
+
+// Feed
 const _feedPage = 'feed';
+const _postPage = 'post/:latitude/:longitude';
+
+// Profile
 const _profilePage = 'profile';
+const _editProfilePage = 'editProfile/:name/:email/:imageUrl';
+
+// Access
 const _accessPage = 'access';
 const _signUpPage = 'signUp';
 const _signInPage = 'signIn';
 
+// Feed
 const _feedPath = _slash + _feedPage;
+const _postPath = _feedPath + _slash + _postPage;
+
+// Profile
 const _profilePath = _slash + _profilePage;
+const _editProfilePath = _profilePath + _slash + _editProfilePage;
+
+// Access
 const _accessPath = _slash + _accessPage;
 const _signUpPath = _accessPath + _slash + _signUpPage;
 const _signInPath = _accessPath + _slash + _signInPage;
@@ -66,7 +86,20 @@ final goRouterProvider = Provider.autoDispose<GoRouter>(
               routes: [
                 GoRoute(
                   path: _feedPath,
-                  builder: (context, state) => HomePage.create(),
+                  builder: (context, state) => FeedPage.create(),
+                  routes: [
+                    GoRoute(
+                      path: _postPage,
+                      builder: (context, state) => PostPage.create(
+                        geolocation: Geolocation(
+                          latitude: double.parse(
+                              state.pathParameters['latitude'] ?? '0'),
+                          longitude: double.parse(
+                              state.pathParameters['longitude'] ?? '0'),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
@@ -75,7 +108,22 @@ final goRouterProvider = Provider.autoDispose<GoRouter>(
               routes: [
                 GoRoute(
                   path: _profilePath,
-                  builder: (context, state) => HomePage.create(),
+                  builder: (context, state) => ProfilePage.create(),
+                  routes: [
+                    GoRoute(
+                      path: _editProfilePage,
+                      builder: (context, state) {
+                        final profile = state.extra as UserProfile;
+                        return EditProfilePage.create(
+                        profile: UserProfile(
+                          name: profile.name,
+                          email: profile.email,
+                          imageUrl: profile.imageUrl,
+                        ),
+                      );
+                      },
+                    ),
+                  ],
                 ),
               ],
             ),
@@ -101,6 +149,17 @@ extension PageNavigationExtension on GoRouter {
   void goFeed() => go(_feedPath);
 
   void goProfile() => go(_profilePath);
+
+  Future<void> pushPost({required Geolocation geolocation}) async {
+    final postPath = _postPath
+        .replaceFirst(':latitude', geolocation.latitude.toString())
+        .replaceFirst(':longitude', geolocation.longitude.toString());
+    await push(postPath);
+  }
+
+  Future<void> pushEditProfile({required UserProfile profile}) async {
+    await push(_editProfilePath, extra: profile);
+  }
 }
 
 extension GoRouterConsumerExtension on WidgetRef {

@@ -27,7 +27,6 @@ class Log {
 }
 
 Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
   final errorLogger = Log().logError;
 
   await runZonedGuarded(

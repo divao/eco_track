@@ -45,7 +45,7 @@ class LightColors implements AppColors {
   Color get flushbarBackgroundColor => _firebrick;
 
   @override
-  Color get flushbarIconColor => _darkGray;
+  Color get flushbarIconColor => _white;
 
   // Text Field
 

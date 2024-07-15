@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:domain/exceptions.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -74,6 +76,15 @@ class AuthRDS {
         if (userDoc.exists) {
           await userDoc.reference.delete();
         }
+
+        final userPostsRef = _firestore.collection('posts').where('userUid', isEqualTo: user.uid);
+        final userPostsDoc = await userPostsRef.get();
+
+        if (userPostsDoc.docs.isNotEmpty) {
+          for (final post in userPostsDoc.docs) {
+            await post.reference.delete();
+          }
+        }
       }
 
       await user.reauthenticateWithCredential(authCredential);
@@ -96,4 +107,5 @@ class AuthRDS {
       return Future.value(currentUser.uid);
     }
   }
+
 }

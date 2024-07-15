@@ -31,10 +31,51 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Feed"),
         "bottomNavigationProfileItem":
             MessageLookupByLibrary.simpleMessage("Perfil"),
+        "confirm": MessageLookupByLibrary.simpleMessage("OK"),
+        "deleteAccountButton":
+            MessageLookupByLibrary.simpleMessage("Excluir conta"),
+        "deleteUserDialogContent": MessageLookupByLibrary.simpleMessage(
+            "Deseja realmente excluir sua conta?"),
+        "deleteUserDialogTitle":
+            MessageLookupByLibrary.simpleMessage("Excluir conta"),
+        "editProfileButton":
+            MessageLookupByLibrary.simpleMessage("Editar perfil"),
+        "editProfilePageSubmitButton":
+            MessageLookupByLibrary.simpleMessage("Salvar"),
+        "editProfilePageTitle":
+            MessageLookupByLibrary.simpleMessage("Editar perfil"),
+        "flushbarDeleteUserErrorMessage": MessageLookupByLibrary.simpleMessage(
+            "Erro ao excluir a conta, tente novamente!"),
         "flushbarEmailErrorMessage": MessageLookupByLibrary.simpleMessage(
             "O email informado já está em uso!"),
+        "flushbarGeolocationErrorMessage": MessageLookupByLibrary.simpleMessage(
+            "Não foi possível obter a localização, tente novamente!"),
+        "flushbarPermissionsErrorMessage": MessageLookupByLibrary.simpleMessage(
+            "Alguma permissão não foi concedida, tente novamente!"),
+        "flushbarPostErrorMessage": MessageLookupByLibrary.simpleMessage(
+            "Erro ao postar a foto, tente novamente!"),
         "flushbarServerErrorMessage": MessageLookupByLibrary.simpleMessage(
             "Ocorreu um erro, tente novamente!"),
+        "flushbarSignOutErrorMessage": MessageLookupByLibrary.simpleMessage(
+            "Erro ao sair, tente novamente!"),
+        "genericError":
+            MessageLookupByLibrary.simpleMessage("Algo deu errado."),
+        "logoutButton": MessageLookupByLibrary.simpleMessage("Sair"),
+        "no": MessageLookupByLibrary.simpleMessage("NÃO"),
+        "noInternetError":
+            MessageLookupByLibrary.simpleMessage("Sem conexão com a internet."),
+        "permissionsInfoDialogContent": MessageLookupByLibrary.simpleMessage(
+            "EcoTrack é um app que fomenta o turismo pelo meio ambiente. Ao postar uma foto, a sua localização será marcada para possibilitar que outros usuários visualizem e visitem o mesmo local.\nPortanto, para postar fotos, é necessário conceder as permissões de localização e câmera."),
+        "permissionsInfoDialogTitle":
+            MessageLookupByLibrary.simpleMessage("Informativo"),
+        "postButton": MessageLookupByLibrary.simpleMessage("Postar"),
+        "postDescriptionHintText":
+            MessageLookupByLibrary.simpleMessage("Legenda (opcional)"),
+        "postDescriptionLabel": MessageLookupByLibrary.simpleMessage("Legenda"),
+        "postLocationLabel":
+            MessageLookupByLibrary.simpleMessage("Ver no Maps"),
+        "postPreviewTitle": MessageLookupByLibrary.simpleMessage("Postar"),
+        "profilePageTitle": MessageLookupByLibrary.simpleMessage("Perfil"),
         "signInEmailHintText":
             MessageLookupByLibrary.simpleMessage("Digite seu e-mail"),
         "signInEmailLabel": MessageLookupByLibrary.simpleMessage("E-mail"),
@@ -48,6 +89,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "signInPasswordLabel": MessageLookupByLibrary.simpleMessage("Senha"),
         "signInWrongCredentialsError":
             MessageLookupByLibrary.simpleMessage("E-mail ou senha incorreta"),
+        "signOutDialogContent":
+            MessageLookupByLibrary.simpleMessage("Deseja realmente sair?"),
+        "signOutDialogTitle": MessageLookupByLibrary.simpleMessage("Logout"),
         "signUpEmailEmptyError":
             MessageLookupByLibrary.simpleMessage("O email é obrigatório"),
         "signUpEmailHintText":
@@ -65,6 +109,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "signUpPageSignUpButton":
             MessageLookupByLibrary.simpleMessage("Cadastrar"),
         "signUpPageTitle": MessageLookupByLibrary.simpleMessage("Cadastro"),
+        "signUpPageUploadPhotoButton":
+            MessageLookupByLibrary.simpleMessage("Carregar foto"),
         "signUpPasswordConfirmationEmptyError":
             MessageLookupByLibrary.simpleMessage(
                 "A confirmação de senha não pode ser vazia"),
@@ -81,6 +127,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Digite sua senha"),
         "signUpPasswordInvalidError": MessageLookupByLibrary.simpleMessage(
             "A senha deve ter pelo menos 6 caracteres"),
-        "signUpPasswordLabel": MessageLookupByLibrary.simpleMessage("Senha")
+        "signUpPasswordLabel": MessageLookupByLibrary.simpleMessage("Senha"),
+        "timeoutError":
+            MessageLookupByLibrary.simpleMessage("Erro interno do servidor."),
+        "tryAgain": MessageLookupByLibrary.simpleMessage("TENTAR NOVAMENTE"),
+        "yes": MessageLookupByLibrary.simpleMessage("SIM")
       };
 }

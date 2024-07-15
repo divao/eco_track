@@ -23,5 +23,6 @@ const _green = Color(0xFF06A94D);
 const _graniteGray = Color(0xFF666666);
 const _darkGray = Color(0xFF333333);
 const _firebrick = Color(0xFFB3261E);
+const _cerulean = Color(0xFF00AADA);
 
 const _montserratFontFamily = 'Montserrat';

@@ -80,18 +80,16 @@ class FlushbarHandler {
       BuildContext context, {
         required WidgetRef ref,
       }) async {
-    final colors = AppColors.of(ref);
-    final textStyles = AppTextStyles.of(ref);
     _displayFlushBar(
       ref: ref,
       context: context,
       message: Text(
         ref.s.flushbarServerErrorMessage,
-        style: textStyles.flushBarError,
+        style: ref.textStyles.flushBarError,
       ),
       leftBarIndicatorColor: Colors.transparent,
       duration: const Duration(seconds: 2),
-      backgroundColor: colors.flushbarBackgroundColor,
+      backgroundColor: ref.colors.flushbarBackgroundColor,
       flushbarPosition: FlushbarPosition.BOTTOM,
       borderWidth: 1,
     );
@@ -101,20 +99,114 @@ class FlushbarHandler {
       BuildContext context, {
         required WidgetRef ref,
       }) async {
-    final colors = AppColors.of(ref);
-    final textStyles = AppTextStyles.of(ref);
     _displayFlushBar(
       ref: ref,
       context: context,
       message: Text(
         ref.s.flushbarEmailErrorMessage,
-        style: textStyles.flushBarError,
+        style: ref.textStyles.flushBarError,
       ),
       leftBarIndicatorColor: Colors.transparent,
       duration: const Duration(seconds: 2),
-      backgroundColor: colors.flushbarBackgroundColor,
+      backgroundColor: ref.colors.flushbarBackgroundColor,
       flushbarPosition: FlushbarPosition.BOTTOM,
       borderWidth: 1,
     );
   }
+
+  Future<void> permissionsDeniedFlushbar(
+      BuildContext context, {
+        required WidgetRef ref,
+      }) async {
+    _displayFlushBar(
+      ref: ref,
+      context: context,
+      message: Text(
+        ref.s.flushbarPermissionsErrorMessage,
+        style: ref.textStyles.flushBarError,
+      ),
+      leftBarIndicatorColor: Colors.transparent,
+      duration: const Duration(seconds: 2),
+      backgroundColor: ref.colors.flushbarBackgroundColor,
+      flushbarPosition: FlushbarPosition.BOTTOM,
+      borderWidth: 1,
+    );
+  }
+
+  Future<void> geolocationErrorFlushbar(
+      BuildContext context, {
+        required WidgetRef ref,
+      }) async {
+    _displayFlushBar(
+      ref: ref,
+      context: context,
+      message: Text(
+        ref.s.flushbarGeolocationErrorMessage,
+        style: ref.textStyles.flushBarError,
+      ),
+      leftBarIndicatorColor: Colors.transparent,
+      duration: const Duration(seconds: 2),
+      backgroundColor: ref.colors.flushbarBackgroundColor,
+      flushbarPosition: FlushbarPosition.BOTTOM,
+      borderWidth: 1,
+    );
+  }
+
+  Future<void> postErrorFlushbar(
+      BuildContext context, {
+        required WidgetRef ref,
+      }) async {
+    _displayFlushBar(
+      ref: ref,
+      context: context,
+      message: Text(
+        ref.s.flushbarPostErrorMessage,
+        style: ref.textStyles.flushBarError,
+      ),
+      leftBarIndicatorColor: Colors.transparent,
+      duration: const Duration(seconds: 2),
+      backgroundColor: ref.colors.flushbarBackgroundColor,
+      flushbarPosition: FlushbarPosition.BOTTOM,
+      borderWidth: 1,
+    );
+  }
+
+  Future<void> signOutErrorFlushbar(
+      BuildContext context, {
+        required WidgetRef ref,
+      }) async {
+    _displayFlushBar(
+      ref: ref,
+      context: context,
+      message: Text(
+        ref.s.flushbarSignOutErrorMessage,
+        style: ref.textStyles.flushBarError,
+      ),
+      leftBarIndicatorColor: Colors.transparent,
+      duration: const Duration(seconds: 2),
+      backgroundColor: ref.colors.flushbarBackgroundColor,
+      flushbarPosition: FlushbarPosition.BOTTOM,
+      borderWidth: 1,
+    );
+  }
+
+  Future<void> deleteUserErrorFlushbar(
+      BuildContext context, {
+        required WidgetRef ref,
+      }) async {
+    _displayFlushBar(
+      ref: ref,
+      context: context,
+      message: Text(
+        ref.s.flushbarDeleteUserErrorMessage,
+        style: ref.textStyles.flushBarError,
+      ),
+      leftBarIndicatorColor: Colors.transparent,
+      duration: const Duration(seconds: 2),
+      backgroundColor: ref.colors.flushbarBackgroundColor,
+      flushbarPosition: FlushbarPosition.BOTTOM,
+      borderWidth: 1,
+    );
+  }
+
 }

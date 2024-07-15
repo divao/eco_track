@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:domain/model/user_profile.dart';
 
 abstract class AuthDataRepository {
@@ -10,6 +12,7 @@ abstract class AuthDataRepository {
     required String name,
     required String email,
     required String password,
+    required File profileImage,
   });
 
   Future<void> signOut();
@@ -19,5 +22,10 @@ abstract class AuthDataRepository {
   Future<void> deleteUser({
     required bool deleteData,
     required String password,
+  });
+
+  Future<void> editProfile({
+    String? name,
+    File? profileImage,
   });
 }

@@ -1,8 +1,11 @@
 import 'dart:async';
+import 'dart:io';
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:common/generated/l10n.dart';
 import 'package:common/presentation/common/app_theme/theme_extension.dart';
 import 'package:eco_track_whitelabel/common/routing.dart';
+import 'package:eco_track_whitelabel/common/utils.dart';
 import 'package:eco_track_whitelabel/presentation/access/sign_up/bloc/sign_up_bloc.dart';
 import 'package:eco_track_whitelabel/presentation/access/sign_up/bloc/sign_up_event.dart';
 import 'package:eco_track_whitelabel/presentation/access/sign_up/bloc/sign_up_state.dart';
@@ -17,6 +20,8 @@ import 'package:eco_track_whitelabel/presentation/eco_scaffold.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:image_picker/image_picker.dart';
 
 class SignUpPage extends ConsumerStatefulWidget {
   const SignUpPage({
@@ -49,6 +54,9 @@ class _SignUpPageState extends ConsumerState<SignUpPage> {
   final _emailFocusNode = FocusNode();
   final _passwordFocusNode = FocusNode();
   final _passwordConfirmationFocusNode = FocusNode();
+
+  final imagePicker = ImagePicker();
+  File? imageFile = null;
 
   final _debouncer = Debouncer(milliseconds: 500);
 
@@ -142,6 +150,29 @@ class _SignUpPageState extends ConsumerState<SignUpPage> {
                   child: SingleChildScrollView(
                     child: Column(
                       children: [
+                        imageFile != null
+                            ? CircleAvatar(
+                                radius: 54,
+                                backgroundImage: FileImage(imageFile!))
+                            : CircleAvatar(
+                                radius: 54,
+                                backgroundImage: AssetImage(
+                                    ref.assets.profilePlaceholderImage),
+                              ),
+                        const SizedBox(height: 8),
+                        EcoButton(
+                            text: ref.s.signUpPageUploadPhotoButton,
+                            buttonType: ButtonType.text,
+                            onPressed: () async {
+                              final pickedFile = await imagePicker.pickImage(
+                                  source: ImageSource.gallery);
+                              if (pickedFile != null) {
+                                setState(() {
+                                  imageFile = File(pickedFile.path);
+                                });
+                              }
+                            }),
+                        const SizedBox(height: 8),
                         BlocBuilder<SignUpBloc, SignUpState>(
                           bloc: _bloc,
                           buildWhen: (previous, current) =>
@@ -274,13 +305,15 @@ class _SignUpPageState extends ConsumerState<SignUpPage> {
                         children: [
                           EcoButton(
                             onPressed: state.buttonStatus is ButtonActive
-                                ? () {
+                                ? () async {
                                     FocusScope.of(context).unfocus();
+                                    final file = imageFile ?? await getImageFileFromAssets(ref.assets.profilePlaceholderImage);
                                     _bloc.add(
                                       SignUpSubmitted(
                                         name: _nameController.text,
                                         email: _emailController.text,
                                         password: _passwordController.text,
+                                        profileImage: file,
                                       ),
                                     );
                                   }
