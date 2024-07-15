@@ -50,6 +50,36 @@ class FeedPostItem extends ConsumerWidget {
           CachedNetworkImage(
             imageUrl: feedPost.postImageUrl,
             width: double.infinity,
+            placeholder: (context, url) {
+              final width = MediaQuery.of(context).size.width;
+              final height = width * 16 / 9;
+              return SizedBox(
+              width: width,
+              height: height,
+              child: Center(
+                child: Icon(
+                  Icons.image_outlined,
+                  size: 100,
+                  color: ref.colors.imagePlaceholderColor,
+                ),
+              ),
+            );
+            },
+            errorWidget: (context, url, error) {
+              final width = MediaQuery.of(context).size.width;
+              final height = width * 16 / 9;
+              return SizedBox(
+                width: width,
+                height: height,
+                child: Center(
+                  child: Icon(
+                    Icons.image_outlined,
+                    size: 100,
+                    color: ref.colors.imagePlaceholderColor,
+                  ),
+                ),
+              );
+            },
           ),
           const SizedBox(height: 4),
           if (feedPost.description.isNotEmpty)

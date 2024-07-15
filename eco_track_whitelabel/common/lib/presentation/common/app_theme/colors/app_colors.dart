@@ -13,6 +13,8 @@ abstract class AppColors {
 
   Color get appBarContentColor;
 
+  Color get imagePlaceholderColor;
+
   // Bottom Navigation
 
   Color get bottomNavigationBarColor;

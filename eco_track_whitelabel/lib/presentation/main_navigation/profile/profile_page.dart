@@ -1,7 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:common/presentation/common/app_theme/theme_extension.dart';
 import 'package:eco_track_whitelabel/common/routing.dart';
-import 'package:eco_track_whitelabel/data/mappers/remote_to_domain.dart';
 import 'package:eco_track_whitelabel/data/mappers/view_to_domain.dart';
 import 'package:eco_track_whitelabel/presentation/common/eco_button.dart';
 import 'package:eco_track_whitelabel/presentation/common/handler/dialog_handler.dart';

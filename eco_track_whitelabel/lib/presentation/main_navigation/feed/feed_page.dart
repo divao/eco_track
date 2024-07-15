@@ -88,35 +88,41 @@ class _FeedPageState extends ConsumerState<FeedPage> {
                 onTryAgainTap: () => _bloc.add(TryAgain()),
                 successWidgetBuilder: (context, success) {
                   final postList = success.feedPostList;
-                  return Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      ListView.builder(
-                        itemCount: postList.length,
-                        itemBuilder: (context, index) => FeedPostItem(
-                          feedPost: postList[index],
-                          isLast: index == postList.length - 1,
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 16.0),
-                        child: SizedBox(
-                          height: 60,
-                          width: 60,
-                          child: IconButton(
-                            icon: const Icon(Icons.camera_alt_outlined),
-                            iconSize: 36,
-                            style: IconButton.styleFrom(
-                              foregroundColor: ref.colors.surfaceColor,
-                              backgroundColor: ref.colors.primaryColor,
-                            ),
-                            onPressed: () {
-                              _requestPermissions();
-                            },
+                  return RefreshIndicator(
+                    onRefresh: () async {
+                      _bloc.add(GetFeed());
+                    },
+                    color: ref.colors.primaryColor,
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        ListView.builder(
+                          itemCount: postList.length,
+                          itemBuilder: (context, index) => FeedPostItem(
+                            feedPost: postList[index],
+                            isLast: index == postList.length - 1,
                           ),
                         ),
-                      ),
-                    ],
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 16.0),
+                          child: SizedBox(
+                            height: 60,
+                            width: 60,
+                            child: IconButton(
+                              icon: const Icon(Icons.camera_alt_outlined),
+                              iconSize: 36,
+                              style: IconButton.styleFrom(
+                                foregroundColor: ref.colors.surfaceColor,
+                                backgroundColor: ref.colors.primaryColor,
+                              ),
+                              onPressed: () {
+                                _requestPermissions();
+                              },
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   );
                 });
           }),
