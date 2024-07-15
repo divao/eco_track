@@ -28,6 +28,9 @@ class LightColors implements AppColors {
   @override
   Color get appBarContentColor => _white;
 
+  @override
+  Color get imagePlaceholderColor => _graniteGray;
+
   // Bottom Navigation
 
   @override
@@ -59,7 +62,7 @@ class LightColors implements AppColors {
   Color get textFieldErrorBorderColor => _firebrick;
 
   @override
-  Color get textFieldPasswordVisibilityIconColor => _white.withOpacity(0.6);
+  Color get textFieldPasswordVisibilityIconColor => _darkGray.withOpacity(0.6);
 
   // EcoButton
 

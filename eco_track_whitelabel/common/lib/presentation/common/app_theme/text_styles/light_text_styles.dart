@@ -190,4 +190,12 @@ class LightTextStyles implements AppTextStyles {
     fontWeight: FontWeight.w400,
     fontFamily: _montserratFontFamily,
   );
+
+  @override
+  TextStyle get profileSystemOS => const TextStyle(
+    color: _graniteGray,
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
+    fontFamily: _montserratFontFamily,
+  );
 }
