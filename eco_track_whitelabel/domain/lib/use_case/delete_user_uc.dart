@@ -1,9 +1,4 @@
 import 'package:domain/data_repository/auth_data_repository.dart';
-import 'package:domain/model/user_profile.dart';
-import 'package:domain/use_case/use_case.dart';
-
-
-import 'package:domain/data_repository/auth_data_repository.dart';
 import 'package:domain/use_case/use_case.dart';
 
 class DeleteUserUC extends UseCase<DeleteUserUCParams, void> {

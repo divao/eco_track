@@ -1,7 +1,6 @@
 import 'package:eco_track_whitelabel/presentation/common/utils/status/button_status.dart';
 import 'package:eco_track_whitelabel/presentation/common/utils/status/edit_profile_status.dart';
 import 'package:eco_track_whitelabel/presentation/common/utils/status/input_status.dart';
-import 'package:eco_track_whitelabel/presentation/common/utils/status/sign_up_status.dart';
 
 final class EditProfileState {
   const EditProfileState({
