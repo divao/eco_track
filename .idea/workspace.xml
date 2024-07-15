@@ -5,39 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="464a9ebe-2920-418b-98be-5b3eb5a5f373" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/1024.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/114.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/120.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/29.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/40.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/57.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/58.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/60.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/80.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/87.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/android/app/src/main/kotlin/com/example/cachoeira_ferreira/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cachoeira_ferreira/android/app/src/main/kotlin/com/example/cachoeira_ferreira/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/cachoeira_ferreira/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/cachoeira_ferreira/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/cachoeira_ferreira/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/cachoeira_ferreira/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/cachoeira_ferreira/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/domain/lib/use_case/delete_user_uc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/domain/lib/use_case/delete_user_uc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/data/remote/data_source/auth_rds.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/data/remote/data_source/auth_rds.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/data/remote/data_source/user_rds.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/data/remote/data_source/user_rds.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/access/sign_up/sign_up_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/access/sign_up/sign_up_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/common/eco_text_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/common/eco_text_field.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/edit_profile/bloc/edit_profile_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/edit_profile/bloc/edit_profile_state.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/edit_profile/edit_profile_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/edit_profile/edit_profile_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,12 +43,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="feature/cachoeira-do-ferreira" />
-                    <option name="lastUsedInstant" value="1721030850" />
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1721031415" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="dev" />
-                    <option name="lastUsedInstant" value="1721027385" />
+                    <option name="branchName" value="feature/cachoeira-do-ferreira" />
+                    <option name="lastUsedInstant" value="1721030850" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
@@ -118,7 +94,7 @@
     "cidr.known.project.marker": "true",
     "com.android.tools.idea.streaming.zoom.toolbar.visible": "false",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "feature/cachoeira-do-ferreira",
+    "git-widget-placeholder": "dev",
     "io.flutter.reload.alreadyRun": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/kaio-/Documents/GitHub/eco_track/cachoeira_ferreira/common/lib/assets",
@@ -141,7 +117,7 @@
       <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\eco_track_whitelabel\lib\presentation\main_navigation\feed\widgets" />
     </key>
   </component>
-  <component name="RunManager" selected="Flutter.CachoeiraFerreira">
+  <component name="RunManager" selected="Flutter.EcoTrack">
     <configuration name="CachoeiraFerreira" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="filePath" value="$PROJECT_DIR$/cachoeira_ferreira/lib/main.dart" />
       <method v="2" />

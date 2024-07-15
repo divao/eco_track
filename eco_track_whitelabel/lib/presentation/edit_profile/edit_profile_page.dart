@@ -5,7 +5,6 @@ import 'package:common/generated/l10n.dart';
 import 'package:common/presentation/common/app_theme/theme_extension.dart';
 import 'package:domain/model/user_profile.dart';
 import 'package:eco_track_whitelabel/common/routing.dart';
-import 'package:eco_track_whitelabel/common/utils.dart';
 import 'package:eco_track_whitelabel/presentation/common/eco_button.dart';
 import 'package:eco_track_whitelabel/presentation/common/eco_text_field.dart';
 import 'package:eco_track_whitelabel/presentation/common/handler/flushbar_handler.dart';

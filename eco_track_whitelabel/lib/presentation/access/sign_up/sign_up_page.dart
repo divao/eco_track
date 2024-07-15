@@ -1,7 +1,5 @@
-import 'dart:async';
 import 'dart:io';
 
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:common/generated/l10n.dart';
 import 'package:common/presentation/common/app_theme/theme_extension.dart';
 import 'package:eco_track_whitelabel/common/routing.dart';
@@ -20,7 +18,6 @@ import 'package:eco_track_whitelabel/presentation/eco_scaffold.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:image_picker/image_picker.dart';
 
 class SignUpPage extends ConsumerStatefulWidget {
