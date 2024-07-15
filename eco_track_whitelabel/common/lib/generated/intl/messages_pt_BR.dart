@@ -44,6 +44,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Salvar"),
         "editProfilePageTitle":
             MessageLookupByLibrary.simpleMessage("Editar perfil"),
+        "flushbarDeleteUserErrorMessage": MessageLookupByLibrary.simpleMessage(
+            "Erro ao excluir a conta, tente novamente!"),
         "flushbarEmailErrorMessage": MessageLookupByLibrary.simpleMessage(
             "O email informado já está em uso!"),
         "flushbarGeolocationErrorMessage": MessageLookupByLibrary.simpleMessage(
@@ -54,6 +56,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Erro ao postar a foto, tente novamente!"),
         "flushbarServerErrorMessage": MessageLookupByLibrary.simpleMessage(
             "Ocorreu um erro, tente novamente!"),
+        "flushbarSignOutErrorMessage": MessageLookupByLibrary.simpleMessage(
+            "Erro ao sair, tente novamente!"),
         "genericError":
             MessageLookupByLibrary.simpleMessage("Algo deu errado."),
         "logoutButton": MessageLookupByLibrary.simpleMessage("Sair"),

@@ -5,6 +5,7 @@ import 'package:eco_track_whitelabel/data/mappers/remote_to_domain.dart';
 import 'package:eco_track_whitelabel/data/mappers/view_to_domain.dart';
 import 'package:eco_track_whitelabel/presentation/common/eco_button.dart';
 import 'package:eco_track_whitelabel/presentation/common/handler/dialog_handler.dart';
+import 'package:eco_track_whitelabel/presentation/common/handler/flushbar_handler.dart';
 import 'package:eco_track_whitelabel/presentation/common/state_response_view.dart';
 import 'package:eco_track_whitelabel/presentation/common/utils/status/delete_user_status.dart';
 import 'package:eco_track_whitelabel/presentation/common/utils/status/sign_out_status.dart';
@@ -38,6 +39,16 @@ class ProfilePage extends ConsumerStatefulWidget {
 class _ProfilePageState extends ConsumerState<ProfilePage> {
   ProfileBloc get _bloc => widget.bloc;
 
+  final _passwordController = TextEditingController();
+  final _passwordFocusNode = FocusNode();
+
+  @override
+  void dispose() {
+    _passwordController.dispose();
+    _passwordFocusNode.dispose();
+    super.dispose();
+  }
+
   @override
   void initState() {
     super.initState();
@@ -59,10 +70,16 @@ class _ProfilePageState extends ConsumerState<ProfilePage> {
                 state.deleteUserStatus == DeleteUserStatus.success) {
               ref.goRouter.goAccess();
             } else if (state.signOutStatus == SignOutStatus.error) {
-              // faz algo ae
+              FlushbarHandler.instance.signOutErrorFlushbar(
+                context,
+                ref: ref,
+              );
               _bloc.add(GetProfile());
             } else if (state.deleteUserStatus == DeleteUserStatus.error) {
-              // faz algo ae
+              FlushbarHandler.instance.deleteUserErrorFlushbar(
+                context,
+                ref: ref,
+              );
               _bloc.add(GetProfile());
             }
           }
@@ -117,12 +134,15 @@ class _ProfilePageState extends ConsumerState<ProfilePage> {
                               text: ref.s.deleteAccountButton,
                               buttonType: ButtonType.text,
                               onPressed: () {
+                                _passwordController.text = '';
                                 DialogHandler.instance.showDeleteUserDialog(
                                   context,
                                   ref,
-                                  onConfirmPressed: () {
+                                  passwordController: _passwordController,
+                                  passwordFocusNode: _passwordFocusNode,
+                                  onConfirmPressed: (password) {
                                     _bloc.add(
-                                      DeleteUser(password: 'asdasd'),
+                                      DeleteUser(password: password),
                                     );
                                   },
                                 );

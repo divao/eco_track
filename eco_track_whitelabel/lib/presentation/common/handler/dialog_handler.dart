@@ -1,5 +1,8 @@
 import 'package:common/presentation/common/app_theme/theme_extension.dart';
+import 'package:eco_track_whitelabel/presentation/common/eco_text_field.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
@@ -13,22 +16,23 @@ class DialogHandler {
   static DialogHandler get instance => _instance;
 
   Future<void> _showDialog(
-      BuildContext context,
-      WidgetRef ref, {
-        Widget? title,
-        TextStyle? titleTextStyle,
-        Widget? content,
-        TextStyle? contentTextStyle,
-        Color? backgroundColor,
-        List<Widget>? actions,
-      }) {
+    BuildContext context,
+    WidgetRef ref, {
+    Widget? title,
+    TextStyle? titleTextStyle,
+    Widget? content,
+    TextStyle? contentTextStyle,
+    Color? backgroundColor,
+    List<Widget>? actions,
+  }) {
     return showDialog<AlertDialog>(
       context: context,
       builder: (context) => AlertDialog(
         title: title,
         titleTextStyle: titleTextStyle ?? ref.textStyles.dialogTitleTextStyle,
         content: content,
-        contentTextStyle: contentTextStyle ?? ref.textStyles.dialogContentTextStyle,
+        contentTextStyle:
+            contentTextStyle ?? ref.textStyles.dialogContentTextStyle,
         backgroundColor: backgroundColor ?? ref.colors.surfaceColor,
         actions: actions,
       ),
@@ -36,10 +40,10 @@ class DialogHandler {
   }
 
   Future<void> showPermissionsInfoDialog(
-      BuildContext context,
-      WidgetRef ref, {
-        VoidCallback? onConfirmPressed,
-      }) async {
+    BuildContext context,
+    WidgetRef ref, {
+    VoidCallback? onConfirmPressed,
+  }) async {
     await _showDialog(
       context,
       ref,
@@ -65,10 +69,10 @@ class DialogHandler {
   }
 
   Future<void> showSignOutDialog(
-      BuildContext context,
-      WidgetRef ref, {
-        VoidCallback? onConfirmPressed,
-      }) async {
+    BuildContext context,
+    WidgetRef ref, {
+    VoidCallback? onConfirmPressed,
+  }) async {
     await _showDialog(
       context,
       ref,
@@ -107,15 +111,33 @@ class DialogHandler {
   }
 
   Future<void> showDeleteUserDialog(
-      BuildContext context,
-      WidgetRef ref, {
-        VoidCallback? onConfirmPressed,
-      }) async {
+    BuildContext context,
+    WidgetRef ref, {
+    required Function(String password) onConfirmPressed,
+    required TextEditingController passwordController,
+    required FocusNode passwordFocusNode,
+  }) async {
     await _showDialog(
       context,
       ref,
       title: Text(ref.s.deleteUserDialogTitle),
-      content: Text(ref.s.deleteUserDialogContent),
+      content: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(ref.s.deleteUserDialogContent),
+          const SizedBox(height: 16),
+          EcoTextField(
+            controller: passwordController,
+            focusNode: passwordFocusNode,
+            onEditingComplete: () => FocusScope.of(context).unfocus(),
+            labelText: ref.s.signUpPasswordLabel,
+            hintText: ref.s.signUpPasswordHintText,
+            textInputAction: TextInputAction.done,
+            keyboardType: TextInputType.visiblePassword,
+            isPassword: true,
+          ),
+        ],
+      ),
       actions: [
         TextButton(
           style: TextButton.styleFrom(
@@ -137,7 +159,7 @@ class DialogHandler {
           ),
           onPressed: () {
             GoRouter.of(context).pop();
-            onConfirmPressed?.call();
+            onConfirmPressed.call(passwordController.text);
           },
           child: Text(
             ref.s.yes,

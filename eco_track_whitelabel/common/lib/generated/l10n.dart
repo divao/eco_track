@@ -659,6 +659,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Erro ao sair, tente novamente!`
+  String get flushbarSignOutErrorMessage {
+    return Intl.message(
+      'Erro ao sair, tente novamente!',
+      name: 'flushbarSignOutErrorMessage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Erro ao excluir a conta, tente novamente!`
+  String get flushbarDeleteUserErrorMessage {
+    return Intl.message(
+      'Erro ao excluir a conta, tente novamente!',
+      name: 'flushbarDeleteUserErrorMessage',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
