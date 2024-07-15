@@ -5,34 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="464a9ebe-2920-418b-98be-5b3eb5a5f373" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/main_navigation/map/bloc/map_bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/main_navigation/map/bloc/map_event.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/main_navigation/map/bloc/map_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/main_navigation/map/map_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/test/unit_test/domain/mock_data.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/test/unit_test/domain/test_helper.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/test/unit_test/domain/test_helper.mocks.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/test/unit_test/domain/use_case/get_feed_posts_uc_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/test/unit_test/domain/use_case/validate_email_uc_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/test/unit_test/domain/use_case/validate_password_uc_test.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/cachoeira_ferreira/.flutter-plugins" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/cachoeira_ferreira/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cachoeira_ferreira/android/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/common/lib/generated/intl/messages_pt_BR.dart" beforeDir="false" afterPath="$PROJECT_DIR$/cachoeira_ferreira/common/lib/generated/intl/messages_pt_BR.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/common/lib/generated/l10n.dart" beforeDir="false" afterPath="$PROJECT_DIR$/cachoeira_ferreira/common/lib/generated/l10n.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/common/lib/l10n/intl_pt_BR.arb" beforeDir="false" afterPath="$PROJECT_DIR$/cachoeira_ferreira/common/lib/l10n/intl_pt_BR.arb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/cachoeira_ferreira/ios/Runner/AppDelegate.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cachoeira_ferreira/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/.flutter-plugins" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/intl/messages_all.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/intl/messages_all.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/intl/messages_pt_BR.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/intl/messages_pt_BR.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/l10n.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/l10n.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/l10n/intl_pt_BR.arb" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/l10n/intl_pt_BR.arb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/ios/Runner/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/ios/Runner/AppDelegate.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/common/routing.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/common/routing.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/common/eco_track_view_keys.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/common/eco_track_view_keys.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/common/handler/dialog_handler.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/common/handler/dialog_handler.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/home_navigation_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/lib/presentation/home_navigation_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +48,11 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="dev" />
-                    <option name="lastUsedInstant" value="1721031415" />
+                    <option name="lastUsedInstant" value="1721047052" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/map" />
+                    <option name="lastUsedInstant" value="1721046963" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="feature/cachoeira-do-ferreira" />
@@ -76,10 +65,6 @@
                   <RecentBranch>
                     <option name="branchName" value="feature/main-pages" />
                     <option name="lastUsedInstant" value="1720839716" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="feature/authentication" />
-                    <option name="lastUsedInstant" value="1720566044" />
                   </RecentBranch>
                 </list>
               </option>
@@ -101,26 +86,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Flutter.CachoeiraFerreira.executor&quot;: &quot;Run&quot;,
-    &quot;Flutter.EcoTrack.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;com.android.tools.idea.streaming.zoom.toolbar.visible&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kaio-/Documents/GitHub/eco_track/cachoeira_ferreira/common/lib/assets&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Flutter Test.tests in get_feed_posts_uc_test.dart.executor": "Run",
+    "Flutter Test.tests in validate_email_uc_test.dart.executor": "Run",
+    "Flutter Test.tests in validate_password_uc.dart.executor": "Run",
+    "Flutter.CachoeiraFerreira.executor": "Run",
+    "Flutter.EcoTrack.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.android.tools.idea.streaming.zoom.toolbar.visible": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "dev",
+    "io.flutter.reload.alreadyRun": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/kaio-/Documents/GitHub/eco_track/cachoeira_ferreira/common/lib/assets",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\cachoeira_ferreira\common\lib\assets" />
@@ -136,7 +124,7 @@
       <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\eco_track_whitelabel\lib\presentation\main_navigation\feed\widgets" />
     </key>
   </component>
-  <component name="RunManager" selected="Flutter.EcoTrack">
+  <component name="RunManager" selected="Flutter Test.tests in get_feed_posts_uc_test.dart">
     <configuration name="CachoeiraFerreira" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="filePath" value="$PROJECT_DIR$/cachoeira_ferreira/lib/main.dart" />
       <method v="2" />
@@ -145,10 +133,35 @@
       <option name="filePath" value="$PROJECT_DIR$/eco_track_whitelabel/lib/main.dart" />
       <method v="2" />
     </configuration>
+    <configuration name="tests in get_feed_posts_uc_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/eco_track_whitelabel/test/unit_test/domain/use_case/get_feed_posts_uc_test.dart" />
+      <option name="useRegexp" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tests in validate_email_uc_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/eco_track_whitelabel/test/unit_test/domain/use_case/validate_email_uc_test.dart" />
+      <option name="useRegexp" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tests in validate_password_uc.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/eco_track_whitelabel/test/unit_test/domain/use_case/validate_password_uc.dart" />
+      <option name="useRegexp" value="false" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Flutter.EcoTrack" />
       <item itemvalue="Flutter.CachoeiraFerreira" />
+      <item itemvalue="Flutter Test.tests in get_feed_posts_uc_test.dart" />
+      <item itemvalue="Flutter Test.tests in validate_email_uc_test.dart" />
+      <item itemvalue="Flutter Test.tests in validate_password_uc.dart" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flutter Test.tests in get_feed_posts_uc_test.dart" />
+        <item itemvalue="Flutter Test.tests in validate_password_uc.dart" />
+        <item itemvalue="Flutter Test.tests in validate_email_uc_test.dart" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
