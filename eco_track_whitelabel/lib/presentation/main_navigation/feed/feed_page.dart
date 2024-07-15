@@ -42,26 +42,34 @@ class _FeedPageState extends ConsumerState<FeedPage> {
     _bloc.add(GetFeed());
   }
 
-  void _requestPermissions() {
-    DialogHandler.instance.showPermissionsInfoDialog(context, ref,
-        onConfirmPressed: () {
-      [Permission.location, Permission.camera].request().then(
-        (statusMap) {
-          if (statusMap[Permission.location] == PermissionStatus.granted &&
-              statusMap[Permission.camera] == PermissionStatus.granted) {
-            _bloc.add(GetGeolocation());
-          } else if (statusMap[Permission.location] ==
-                  PermissionStatus.permanentlyDenied ||
-              statusMap[Permission.camera] ==
-                  PermissionStatus.permanentlyDenied) {
-            openAppSettings();
-          } else {
-            FlushbarHandler.instance
-                .permissionsDeniedFlushbar(context, ref: ref);
-          }
-        },
-      );
-    });
+  void _requestPermissions({
+    required PermissionStatus locationPermissionStatus,
+    required PermissionStatus cameraPermissionStatus,
+  }) async {
+    if (locationPermissionStatus.isGranted &&
+        cameraPermissionStatus.isGranted) {
+      _bloc.add(GetGeolocation());
+    } else {
+      DialogHandler.instance.showPermissionsInfoDialog(context, ref,
+          onConfirmPressed: () {
+        [Permission.location, Permission.camera].request().then(
+          (statusMap) {
+            if (statusMap[Permission.location] == PermissionStatus.granted &&
+                statusMap[Permission.camera] == PermissionStatus.granted) {
+              _bloc.add(GetGeolocation());
+            } else if (statusMap[Permission.location] ==
+                    PermissionStatus.permanentlyDenied ||
+                statusMap[Permission.camera] ==
+                    PermissionStatus.permanentlyDenied) {
+              openAppSettings();
+            } else {
+              FlushbarHandler.instance
+                  .permissionsDeniedFlushbar(context, ref: ref);
+            }
+          },
+        );
+      });
+    }
   }
 
   @override
@@ -115,8 +123,17 @@ class _FeedPageState extends ConsumerState<FeedPage> {
                                 foregroundColor: ref.colors.surfaceColor,
                                 backgroundColor: ref.colors.primaryColor,
                               ),
-                              onPressed: () {
-                                _requestPermissions();
+                              onPressed: () async {
+                                final locationPermissionStatus =
+                                    await Permission.location.status;
+                                final cameraPermissionStatus =
+                                    await Permission.camera.status;
+                                _requestPermissions(
+                                  locationPermissionStatus:
+                                      locationPermissionStatus,
+                                  cameraPermissionStatus:
+                                      cameraPermissionStatus,
+                                );
                               },
                             ),
                           ),
