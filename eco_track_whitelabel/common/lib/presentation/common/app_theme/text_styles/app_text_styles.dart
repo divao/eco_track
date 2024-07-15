@@ -63,4 +63,6 @@ abstract class AppTextStyles {
 
   TextStyle get profileEmail;
 
+  TextStyle get profileSystemOS;
+
 }

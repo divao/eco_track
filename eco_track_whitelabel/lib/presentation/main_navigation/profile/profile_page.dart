@@ -13,6 +13,7 @@ import 'package:eco_track_whitelabel/presentation/main_navigation/profile/bloc/p
 import 'package:eco_track_whitelabel/presentation/main_navigation/profile/bloc/profile_event.dart';
 import 'package:eco_track_whitelabel/presentation/main_navigation/profile/bloc/profile_state.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -38,6 +39,7 @@ class ProfilePage extends ConsumerStatefulWidget {
 class _ProfilePageState extends ConsumerState<ProfilePage> {
   ProfileBloc get _bloc => widget.bloc;
 
+  final _platform = const MethodChannel('ecoTrack/systemOSVersion');
   final _passwordController = TextEditingController();
   final _passwordFocusNode = FocusNode();
 
@@ -52,6 +54,15 @@ class _ProfilePageState extends ConsumerState<ProfilePage> {
   void initState() {
     super.initState();
     _bloc.add(GetProfile());
+  }
+
+  Future<String> _getSystemOS() async {
+    String systemOS = 'Sistema Operacional não reconhecido';
+    final result = await _platform.invokeMethod<String>('getSystemOSVersion');
+    if (result != null) {
+      systemOS = result;
+    }
+    return systemOS;
   }
 
   @override
@@ -83,91 +94,102 @@ class _ProfilePageState extends ConsumerState<ProfilePage> {
             }
           }
         },
-        builder: (context, state) {
-          return StateResponseView<Loading, Error, Success>(
+        builder: (context, state) => StateResponseView<Loading, Error, Success>(
               state: state,
               onTryAgainTap: () => _bloc.add(TryAgain()),
-              successWidgetBuilder: (context, success) => Padding(
-                    padding: const EdgeInsets.all(24),
-                    child: Column(
-                      children: [
-                        Expanded(
-                          child: SingleChildScrollView(
-                            child: Column(
+              successWidgetBuilder: (context, success) {
+                return FutureBuilder(
+                  future: _getSystemOS(),
+                  builder: (context, snapshot) {
+                    String systemOS = snapshot.data ?? '';
+                    return Padding(
+                        padding: const EdgeInsets.all(24),
+                        child: Column(
+                          children: [
+                            Expanded(
+                              child: SingleChildScrollView(
+                                child: Column(
+                                  children: [
+                                    CircleAvatar(
+                                      radius: 54,
+                                      backgroundImage: CachedNetworkImageProvider(
+                                        success.profile.imageUrl,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 12),
+                                    Text(
+                                      success.profile.name,
+                                      style: ref.textStyles.profileName,
+                                    ),
+                                    const SizedBox(height: 12),
+                                    Text(
+                                      success.profile.email,
+                                      style: ref.textStyles.profileEmail,
+                                    ),
+                                    const SizedBox(height: 12),
+                                    Text(
+                                      systemOS,
+                                      style: ref.textStyles.profileSystemOS,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 24),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.stretch,
                               children: [
-                                CircleAvatar(
-                                  radius: 54,
-                                  backgroundImage: CachedNetworkImageProvider(
-                                    success.profile.imageUrl,
-                                  ),
+                                EcoButton(
+                                  text: ref.s.editProfileButton,
+                                  buttonType: ButtonType.text,
+                                  onPressed: () async {
+                                    await ref.goRouter.pushEditProfile(
+                                        profile: success.profile.toDM());
+                                    _bloc.add(GetProfile());
+                                  },
                                 ),
                                 const SizedBox(height: 12),
-                                Text(
-                                  success.profile.name,
-                                  style: ref.textStyles.profileName,
+                                EcoButton(
+                                  text: ref.s.deleteAccountButton,
+                                  buttonType: ButtonType.text,
+                                  onPressed: () {
+                                    _passwordController.text = '';
+                                    DialogHandler.instance.showDeleteUserDialog(
+                                      context,
+                                      ref,
+                                      passwordController: _passwordController,
+                                      passwordFocusNode: _passwordFocusNode,
+                                      onConfirmPressed: (password) {
+                                        _bloc.add(
+                                          DeleteUser(password: password),
+                                        );
+                                      },
+                                    );
+                                  },
                                 ),
                                 const SizedBox(height: 12),
-                                Text(
-                                  success.profile.email,
-                                  style: ref.textStyles.profileEmail,
+                                EcoButton(
+                                  text: ref.s.logoutButton,
+                                  onPressed: () {
+                                    DialogHandler.instance.showSignOutDialog(
+                                      context,
+                                      ref,
+                                      onConfirmPressed: () {
+                                        _bloc.add(
+                                          SignOut(),
+                                        );
+                                      },
+                                    );
+                                  },
                                 ),
                               ],
-                            ),
-                          ),
-                        ),
-                        const SizedBox(height: 24),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            EcoButton(
-                              text: ref.s.editProfileButton,
-                              buttonType: ButtonType.text,
-                              onPressed: () async {
-                                await ref.goRouter.pushEditProfile(
-                                    profile: success.profile.toDM());
-                                _bloc.add(GetProfile());
-                              },
-                            ),
-                            const SizedBox(height: 12),
-                            EcoButton(
-                              text: ref.s.deleteAccountButton,
-                              buttonType: ButtonType.text,
-                              onPressed: () {
-                                _passwordController.text = '';
-                                DialogHandler.instance.showDeleteUserDialog(
-                                  context,
-                                  ref,
-                                  passwordController: _passwordController,
-                                  passwordFocusNode: _passwordFocusNode,
-                                  onConfirmPressed: (password) {
-                                    _bloc.add(
-                                      DeleteUser(password: password),
-                                    );
-                                  },
-                                );
-                              },
-                            ),
-                            const SizedBox(height: 12),
-                            EcoButton(
-                              text: ref.s.logoutButton,
-                              onPressed: () {
-                                DialogHandler.instance.showSignOutDialog(
-                                  context,
-                                  ref,
-                                  onConfirmPressed: () {
-                                    _bloc.add(
-                                      SignOut(),
-                                    );
-                                  },
-                                );
-                              },
-                            ),
+                            )
                           ],
-                        )
-                      ],
-                    ),
-                  ));
-        },
+                        ),
+                      );
+                  }
+                );
+              }),
       ),
     );
   }
