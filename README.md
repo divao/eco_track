@@ -18,6 +18,7 @@ Dentre padrões de projeto e bibliotecas utilizadas, destacam-se:
  * Navegação com GoRouter;
  * Injeção de dependências com Riverpod;
  * Consumo de API com Firebase;
+ * *Unit Tests* com Mockito;
  * App *White Label*.
 
 ### *White Label*
