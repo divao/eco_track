@@ -29,6 +29,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "appTitle": MessageLookupByLibrary.simpleMessage("EcoTrack"),
         "bottomNavigationFeedItem":
             MessageLookupByLibrary.simpleMessage("Feed"),
+        "bottomNavigationMapItem": MessageLookupByLibrary.simpleMessage("Mapa"),
         "bottomNavigationProfileItem":
             MessageLookupByLibrary.simpleMessage("Perfil"),
         "confirm": MessageLookupByLibrary.simpleMessage("OK"),
@@ -60,7 +61,10 @@ class MessageLookup extends MessageLookupByLibrary {
             "Erro ao sair, tente novamente!"),
         "genericError":
             MessageLookupByLibrary.simpleMessage("Algo deu errado."),
+        "locationPermissionInfoDialogContent": MessageLookupByLibrary.simpleMessage(
+            "Para visualizar a localização das fotos postadas, é necessário conceder a permissão de localização para que o mapa inicie perto de você."),
         "logoutButton": MessageLookupByLibrary.simpleMessage("Sair"),
+        "mapPageTitle": MessageLookupByLibrary.simpleMessage("Mapa"),
         "no": MessageLookupByLibrary.simpleMessage("NÃO"),
         "noInternetError":
             MessageLookupByLibrary.simpleMessage("Sem conexão com a internet."),

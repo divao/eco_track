@@ -11,12 +11,14 @@ class HomeNavigationPage extends ConsumerStatefulWidget {
   const HomeNavigationPage({
     required this.navigationShell,
     required this.feedNavigatorKey,
+    required this.mapNavigatorKey,
     required this.profileNavigatorKey,
     super.key,
   });
 
   final StatefulNavigationShell navigationShell;
   final GlobalKey<NavigatorState> feedNavigatorKey;
+  final GlobalKey<NavigatorState> mapNavigatorKey;
   final GlobalKey<NavigatorState> profileNavigatorKey;
 
   @override
@@ -27,6 +29,8 @@ class _HomeNavigationPageState extends ConsumerState<HomeNavigationPage> {
   StatefulNavigationShell get _navigationShell => widget.navigationShell;
 
   GlobalKey<NavigatorState> get _feedNavigatorKey => widget.feedNavigatorKey;
+
+  GlobalKey<NavigatorState> get _mapNavigatorKey => widget.mapNavigatorKey;
 
   GlobalKey<NavigatorState> get _profileNavigatorKey =>
       widget.profileNavigatorKey;
@@ -41,6 +45,12 @@ class _HomeNavigationPageState extends ConsumerState<HomeNavigationPage> {
           icon: Icons.feed_outlined,
           title: s.bottomNavigationFeedItem,
           navigatorKey: _feedNavigatorKey,
+        ),
+        EcoTrackNavBarItem(
+          key: EcoTrackViewKeys.ecoTrackBottomNavigationBarMap,
+          icon: Icons.map,
+          title: s.bottomNavigationMapItem,
+          navigatorKey: _mapNavigatorKey,
         ),
         EcoTrackNavBarItem(
           key: EcoTrackViewKeys.ecoTrackBottomNavigationBarProfile,
