@@ -53,7 +53,6 @@ class UserRDS {
     if (user == null) {
       throw UnexpectedException();
     }
-
     try {
       return _firestore
           .collection(_profilesCollection)
@@ -66,13 +65,43 @@ class UserRDS {
           'imageUrl': String imageUrl,
         } = data;
         final profileImage =
-        await getResourceUrlFromStorage(_storage, imageUrl);
+            await getResourceUrlFromStorage(_storage, imageUrl);
         return UserProfileRM(
           name: name,
           email: user.email!,
           imageUrl: profileImage,
         );
       });
+    } catch (e) {
+      throw ResponseParseException();
+    }
+  }
+
+  Future<void> editProfile({
+    String? name,
+    File? profileImage,
+  }) async {
+    final user = _auth.currentUser;
+    if (user == null) {
+      throw UnexpectedException();
+    }
+    try {
+      if (profileImage != null) {
+        final userUid = user.uid;
+        final imageUrl = 'profileImages/$userUid';
+        final imageRef = _storage.ref().child(imageUrl);
+
+        await imageRef.putFile(profileImage);
+      }
+
+      if (name != null) {
+        await user.updateDisplayName(name);
+        await _firestore.collection(_profilesCollection).doc(user.uid).update(
+          {
+            'name': name,
+          },
+        );
+      }
     } catch (e) {
       throw ResponseParseException();
     }

@@ -70,4 +70,11 @@ class AuthRepository extends AuthDataRepository {
         deleteData: deleteData,
         password: password,
       );
+
+  @override
+  Future<void> editProfile({String? name, File? profileImage}) async =>
+      _userRDS.editProfile(
+        name: name,
+        profileImage: profileImage,
+      );
 }

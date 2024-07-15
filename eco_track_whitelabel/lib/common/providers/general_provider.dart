@@ -6,6 +6,7 @@ import 'package:domain/data_repository/feed_data_repository.dart';
 import 'package:domain/geo_locator.dart';
 import 'package:domain/logger.dart';
 import 'package:domain/use_case/delete_user_uc.dart';
+import 'package:domain/use_case/edit_profile_uc.dart';
 import 'package:domain/use_case/get_feed_posts_uc.dart';
 import 'package:domain/use_case/get_location_uc.dart';
 import 'package:domain/use_case/get_user_profile_uc.dart';
@@ -211,6 +212,15 @@ final postFeedPostUCProvider = Provider<PostFeedPostUC>((ref) {
   return PostFeedPostUC(
     logger: logger,
     feedDataRepository: repository,
+  );
+});
+
+final editProfileUCProvider = Provider<EditProfileUC>((ref) {
+  final logger = ref.watch(errorLoggerProvider);
+  final repository = ref.watch(authRepositoryProvider);
+  return EditProfileUC(
+    logger: logger,
+    repository: repository,
   );
 });
 

@@ -34,7 +34,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "confirm": MessageLookupByLibrary.simpleMessage("OK"),
         "deleteAccountButton":
             MessageLookupByLibrary.simpleMessage("Excluir conta"),
+        "deleteUserDialogContent": MessageLookupByLibrary.simpleMessage(
+            "Deseja realmente excluir sua conta?"),
+        "deleteUserDialogTitle":
+            MessageLookupByLibrary.simpleMessage("Excluir conta"),
         "editProfileButton":
+            MessageLookupByLibrary.simpleMessage("Editar perfil"),
+        "editProfilePageSubmitButton":
+            MessageLookupByLibrary.simpleMessage("Salvar"),
+        "editProfilePageTitle":
             MessageLookupByLibrary.simpleMessage("Editar perfil"),
         "flushbarEmailErrorMessage": MessageLookupByLibrary.simpleMessage(
             "O email informado já está em uso!"),
@@ -49,6 +57,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "genericError":
             MessageLookupByLibrary.simpleMessage("Algo deu errado."),
         "logoutButton": MessageLookupByLibrary.simpleMessage("Sair"),
+        "no": MessageLookupByLibrary.simpleMessage("NÃO"),
         "noInternetError":
             MessageLookupByLibrary.simpleMessage("Sem conexão com a internet."),
         "permissionsInfoDialogContent": MessageLookupByLibrary.simpleMessage(
@@ -76,6 +85,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "signInPasswordLabel": MessageLookupByLibrary.simpleMessage("Senha"),
         "signInWrongCredentialsError":
             MessageLookupByLibrary.simpleMessage("E-mail ou senha incorreta"),
+        "signOutDialogContent":
+            MessageLookupByLibrary.simpleMessage("Deseja realmente sair?"),
+        "signOutDialogTitle": MessageLookupByLibrary.simpleMessage("Logout"),
         "signUpEmailEmptyError":
             MessageLookupByLibrary.simpleMessage("O email é obrigatório"),
         "signUpEmailHintText":
@@ -114,6 +126,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "signUpPasswordLabel": MessageLookupByLibrary.simpleMessage("Senha"),
         "timeoutError":
             MessageLookupByLibrary.simpleMessage("Erro interno do servidor."),
-        "tryAgain": MessageLookupByLibrary.simpleMessage("TENTAR NOVAMENTE")
+        "tryAgain": MessageLookupByLibrary.simpleMessage("TENTAR NOVAMENTE"),
+        "yes": MessageLookupByLibrary.simpleMessage("SIM")
       };
 }

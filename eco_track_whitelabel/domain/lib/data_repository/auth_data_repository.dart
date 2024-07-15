@@ -23,4 +23,9 @@ abstract class AuthDataRepository {
     required bool deleteData,
     required String password,
   });
+
+  Future<void> editProfile({
+    String? name,
+    File? profileImage,
+  });
 }

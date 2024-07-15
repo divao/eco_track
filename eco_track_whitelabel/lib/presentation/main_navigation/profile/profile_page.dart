@@ -1,7 +1,13 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:common/presentation/common/app_theme/theme_extension.dart';
+import 'package:eco_track_whitelabel/common/routing.dart';
+import 'package:eco_track_whitelabel/data/mappers/remote_to_domain.dart';
+import 'package:eco_track_whitelabel/data/mappers/view_to_domain.dart';
 import 'package:eco_track_whitelabel/presentation/common/eco_button.dart';
+import 'package:eco_track_whitelabel/presentation/common/handler/dialog_handler.dart';
 import 'package:eco_track_whitelabel/presentation/common/state_response_view.dart';
+import 'package:eco_track_whitelabel/presentation/common/utils/status/delete_user_status.dart';
+import 'package:eco_track_whitelabel/presentation/common/utils/status/sign_out_status.dart';
 import 'package:eco_track_whitelabel/presentation/eco_scaffold.dart';
 import 'package:eco_track_whitelabel/presentation/main_navigation/profile/bloc/profile_bloc.dart';
 import 'package:eco_track_whitelabel/presentation/main_navigation/profile/bloc/profile_event.dart';
@@ -42,8 +48,25 @@ class _ProfilePageState extends ConsumerState<ProfilePage> {
   Widget build(BuildContext context) {
     return EcoScaffold(
       title: ref.s.profilePageTitle,
-      body: BlocBuilder<ProfileBloc, ProfileState>(
+      body: BlocConsumer<ProfileBloc, ProfileState>(
         bloc: _bloc,
+        listenWhen: (previous, current) => (current is Success &&
+            (current.signOutStatus != SignOutStatus.idle ||
+                current.deleteUserStatus != DeleteUserStatus.idle)),
+        listener: (context, state) {
+          if (state is Success) {
+            if (state.signOutStatus == SignOutStatus.success ||
+                state.deleteUserStatus == DeleteUserStatus.success) {
+              ref.goRouter.goAccess();
+            } else if (state.signOutStatus == SignOutStatus.error) {
+              // faz algo ae
+              _bloc.add(GetProfile());
+            } else if (state.deleteUserStatus == DeleteUserStatus.error) {
+              // faz algo ae
+              _bloc.add(GetProfile());
+            }
+          }
+        },
         builder: (context, state) {
           return StateResponseView<Loading, Error, Success>(
               state: state,
@@ -83,18 +106,42 @@ class _ProfilePageState extends ConsumerState<ProfilePage> {
                             EcoButton(
                               text: ref.s.editProfileButton,
                               buttonType: ButtonType.text,
-                              onPressed: () {},
+                              onPressed: () async {
+                                await ref.goRouter.pushEditProfile(
+                                    profile: success.profile.toDM());
+                                _bloc.add(GetProfile());
+                              },
                             ),
                             const SizedBox(height: 12),
                             EcoButton(
                               text: ref.s.deleteAccountButton,
                               buttonType: ButtonType.text,
-                              onPressed: () {},
+                              onPressed: () {
+                                DialogHandler.instance.showDeleteUserDialog(
+                                  context,
+                                  ref,
+                                  onConfirmPressed: () {
+                                    _bloc.add(
+                                      DeleteUser(password: 'asdasd'),
+                                    );
+                                  },
+                                );
+                              },
                             ),
                             const SizedBox(height: 12),
                             EcoButton(
                               text: ref.s.logoutButton,
-                              onPressed: () {},
+                              onPressed: () {
+                                DialogHandler.instance.showSignOutDialog(
+                                  context,
+                                  ref,
+                                  onConfirmPressed: () {
+                                    _bloc.add(
+                                      SignOut(),
+                                    );
+                                  },
+                                );
+                              },
                             ),
                           ],
                         )

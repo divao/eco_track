@@ -2,6 +2,8 @@
   "@@locale": "pt_BR",
   "appTitle": "EcoTrack",
   "confirm": "OK",
+  "yes": "SIM",
+  "no": "NÃO",
   "bottomNavigationFeedItem": "Feed",
   "bottomNavigationProfileItem": "Perfil",
   "accessPageSignInButton": "Entrar",
@@ -52,5 +54,11 @@
   "profilePageTitle": "Perfil",
   "editProfileButton": "Editar perfil",
   "deleteAccountButton": "Excluir conta",
-  "logoutButton": "Sair"
+  "logoutButton": "Sair",
+  "editProfilePageTitle": "Editar perfil",
+  "editProfilePageSubmitButton": "Salvar",
+  "signOutDialogTitle": "Logout",
+  "signOutDialogContent": "Deseja realmente sair?",
+  "deleteUserDialogTitle": "Excluir conta",
+  "deleteUserDialogContent": "Deseja realmente excluir sua conta?"
 }

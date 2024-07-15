@@ -20,6 +20,7 @@ class EcoTextField extends ConsumerStatefulWidget {
     this.textInputAction,
     this.errorText,
     this.inputFormatters,
+    this.readOnly = false,
     super.key,
   });
 
@@ -37,6 +38,7 @@ class EcoTextField extends ConsumerStatefulWidget {
   final TextInputAction? textInputAction;
   final String? errorText;
   final List<TextInputFormatter>? inputFormatters;
+  final bool readOnly;
 
   @override
   ConsumerState<ConsumerStatefulWidget> createState() => _EqlTextFieldState();
@@ -77,6 +79,7 @@ class _EqlTextFieldState extends ConsumerState<EcoTextField> {
           height: 4,
         ),
         TextField(
+          readOnly: widget.readOnly,
           textCapitalization: widget.textCapitalization,
           controller: widget.controller,
           focusNode: widget.focusNode,

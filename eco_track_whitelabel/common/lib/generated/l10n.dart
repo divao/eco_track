@@ -70,6 +70,26 @@ class S {
     );
   }
 
+  /// `SIM`
+  String get yes {
+    return Intl.message(
+      'SIM',
+      name: 'yes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `NÃO`
+  String get no {
+    return Intl.message(
+      'NÃO',
+      name: 'no',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Feed`
   String get bottomNavigationFeedItem {
     return Intl.message(
@@ -575,6 +595,66 @@ class S {
     return Intl.message(
       'Sair',
       name: 'logoutButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Editar perfil`
+  String get editProfilePageTitle {
+    return Intl.message(
+      'Editar perfil',
+      name: 'editProfilePageTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Salvar`
+  String get editProfilePageSubmitButton {
+    return Intl.message(
+      'Salvar',
+      name: 'editProfilePageSubmitButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Logout`
+  String get signOutDialogTitle {
+    return Intl.message(
+      'Logout',
+      name: 'signOutDialogTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Deseja realmente sair?`
+  String get signOutDialogContent {
+    return Intl.message(
+      'Deseja realmente sair?',
+      name: 'signOutDialogContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Excluir conta`
+  String get deleteUserDialogTitle {
+    return Intl.message(
+      'Excluir conta',
+      name: 'deleteUserDialogTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Deseja realmente excluir sua conta?`
+  String get deleteUserDialogContent {
+    return Intl.message(
+      'Deseja realmente excluir sua conta?',
+      name: 'deleteUserDialogContent',
       desc: '',
       args: [],
     );
