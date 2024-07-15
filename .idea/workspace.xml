@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="464a9ebe-2920-418b-98be-5b3eb5a5f373" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/test/unit_test/domain/mock_data.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/test/unit_test/domain/test_helper.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/test/unit_test/domain/test_helper.mocks.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/test/unit_test/domain/use_case/get_feed_posts_uc_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/test/unit_test/domain/use_case/validate_email_uc_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eco_track_whitelabel/test/unit_test/domain/use_case/validate_password_uc_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/common/lib/generated/intl/messages_pt_BR.dart" beforeDir="false" afterPath="$PROJECT_DIR$/cachoeira_ferreira/common/lib/generated/intl/messages_pt_BR.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cachoeira_ferreira/common/lib/generated/l10n.dart" beforeDir="false" afterPath="$PROJECT_DIR$/cachoeira_ferreira/common/lib/generated/l10n.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/.flutter-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/intl/messages_pt_BR.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/intl/messages_pt_BR.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/l10n.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eco_track_whitelabel/common/lib/generated/l10n.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1721047052" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/map" />
+                    <option name="lastUsedInstant" value="1721046963" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/cachoeira-do-ferreira" />
+                    <option name="lastUsedInstant" value="1721030850" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1721014709" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/main-pages" />
+                    <option name="lastUsedInstant" value="1720839716" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2izmM73vos0jBWHHtUuROr3ZvsP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Flutter Test.tests in get_feed_posts_uc_test.dart.executor": "Run",
+    "Flutter Test.tests in validate_email_uc_test.dart.executor": "Run",
+    "Flutter Test.tests in validate_password_uc.dart.executor": "Run",
+    "Flutter.CachoeiraFerreira.executor": "Run",
+    "Flutter.EcoTrack.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.android.tools.idea.streaming.zoom.toolbar.visible": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "dev",
+    "io.flutter.reload.alreadyRun": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/kaio-/Documents/GitHub/eco_track/cachoeira_ferreira/common/lib/assets",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\cachoeira_ferreira\common\lib\assets" />
+      <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\eco_track_whitelabel\lib\presentation\common\bottom_navigation" />
+      <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\cachoeira_ferreira" />
+      <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\eco_track_whitelabel" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\cachoeira_ferreira\common" />
+      <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\cachoeira_ferreira\common\lib\assets" />
+      <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\cachoeira_ferreira\common\lib" />
+      <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\eco_track_whitelabel\common\assets" />
+      <recent name="C:\Users\kaio-\Documents\GitHub\eco_track\eco_track_whitelabel\lib\presentation\main_navigation\feed\widgets" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Flutter Test.tests in get_feed_posts_uc_test.dart">
+    <configuration name="CachoeiraFerreira" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/cachoeira_ferreira/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="EcoTrack" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/eco_track_whitelabel/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tests in get_feed_posts_uc_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/eco_track_whitelabel/test/unit_test/domain/use_case/get_feed_posts_uc_test.dart" />
+      <option name="useRegexp" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tests in validate_email_uc_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/eco_track_whitelabel/test/unit_test/domain/use_case/validate_email_uc_test.dart" />
+      <option name="useRegexp" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tests in validate_password_uc.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testFile" value="$PROJECT_DIR$/eco_track_whitelabel/test/unit_test/domain/use_case/validate_password_uc.dart" />
+      <option name="useRegexp" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Flutter.EcoTrack" />
+      <item itemvalue="Flutter.CachoeiraFerreira" />
+      <item itemvalue="Flutter Test.tests in get_feed_posts_uc_test.dart" />
+      <item itemvalue="Flutter Test.tests in validate_email_uc_test.dart" />
+      <item itemvalue="Flutter Test.tests in validate_password_uc.dart" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flutter Test.tests in get_feed_posts_uc_test.dart" />
+        <item itemvalue="Flutter Test.tests in validate_password_uc.dart" />
+        <item itemvalue="Flutter Test.tests in validate_email_uc_test.dart" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="464a9ebe-2920-418b-98be-5b3eb5a5f373" name="Changes" comment="" />
+      <created>1720501728487</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720501728487</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
