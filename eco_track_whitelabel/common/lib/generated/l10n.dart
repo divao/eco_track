@@ -679,6 +679,36 @@ class S {
       args: [],
     );
   }
+
+  /// `Mapa`
+  String get bottomNavigationMapItem {
+    return Intl.message(
+      'Mapa',
+      name: 'bottomNavigationMapItem',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Para visualizar a localização das fotos postadas, é necessário conceder a permissão de localização para que o mapa inicie perto de você.`
+  String get locationPermissionInfoDialogContent {
+    return Intl.message(
+      'Para visualizar a localização das fotos postadas, é necessário conceder a permissão de localização para que o mapa inicie perto de você.',
+      name: 'locationPermissionInfoDialogContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mapa`
+  String get mapPageTitle {
+    return Intl.message(
+      'Mapa',
+      name: 'mapPageTitle',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

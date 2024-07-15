@@ -7,6 +7,7 @@ import 'package:eco_track_whitelabel/presentation/access/sign_up/sign_up_page.da
 import 'package:eco_track_whitelabel/presentation/edit_profile/edit_profile_page.dart';
 import 'package:eco_track_whitelabel/presentation/home_navigation_page.dart';
 import 'package:eco_track_whitelabel/presentation/main_navigation/feed/feed_page.dart';
+import 'package:eco_track_whitelabel/presentation/main_navigation/map/map_page.dart';
 import 'package:eco_track_whitelabel/presentation/main_navigation/profile/profile_page.dart';
 import 'package:eco_track_whitelabel/presentation/post/post_page.dart';
 import 'package:flutter/material.dart';
@@ -18,6 +19,9 @@ const _slash = '/';
 // Feed
 const _feedPage = 'feed';
 const _postPage = 'post/:latitude/:longitude';
+
+// Map
+const _mapPage = 'map';
 
 // Profile
 const _profilePage = 'profile';
@@ -32,6 +36,9 @@ const _signInPage = 'signIn';
 const _feedPath = _slash + _feedPage;
 const _postPath = _feedPath + _slash + _postPage;
 
+// Map
+const _mapPath = _slash + _mapPage;
+
 // Profile
 const _profilePath = _slash + _profilePage;
 const _editProfilePath = _profilePath + _slash + _editProfilePage;
@@ -43,6 +50,7 @@ const _signInPath = _accessPath + _slash + _signInPage;
 
 final _goRouterNavigatorKey = GlobalKey<NavigatorState>();
 final _feedNavigatorKey = GlobalKey<NavigatorState>();
+final _mapNavigatorKey = GlobalKey<NavigatorState>();
 final _profileNavigatorKey = GlobalKey<NavigatorState>();
 
 final goRouterProvider = Provider.autoDispose<GoRouter>(
@@ -104,6 +112,15 @@ final goRouterProvider = Provider.autoDispose<GoRouter>(
               ],
             ),
             StatefulShellBranch(
+              navigatorKey: _mapNavigatorKey,
+              routes: [
+                GoRoute(
+                  path: _mapPath,
+                  builder: (context, state) => MapPage.create(),
+                ),
+              ],
+            ),
+            StatefulShellBranch(
               navigatorKey: _profileNavigatorKey,
               routes: [
                 GoRoute(
@@ -130,6 +147,7 @@ final goRouterProvider = Provider.autoDispose<GoRouter>(
           ],
           builder: (context, state, navigationShell) => HomeNavigationPage(
             feedNavigatorKey: _feedNavigatorKey,
+            mapNavigatorKey: _mapNavigatorKey,
             profileNavigatorKey: _profileNavigatorKey,
             navigationShell: navigationShell,
           ),
@@ -147,6 +165,8 @@ extension PageNavigationExtension on GoRouter {
   void goSignUp() => go(_signUpPath);
 
   void goFeed() => go(_feedPath);
+
+  void goMap() => go(_mapPath);
 
   void goProfile() => go(_profilePath);
 

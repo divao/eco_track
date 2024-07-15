@@ -68,6 +68,35 @@ class DialogHandler {
     );
   }
 
+  Future<void> showLocationPermissionInfoDialog(
+      BuildContext context,
+      WidgetRef ref, {
+        VoidCallback? onConfirmPressed,
+      }) async {
+    await _showDialog(
+      context,
+      ref,
+      title: Text(ref.s.permissionsInfoDialogTitle),
+      content: Text(ref.s.locationPermissionInfoDialogContent),
+      actions: [
+        TextButton(
+          style: TextButton.styleFrom(
+            foregroundColor: ref.colors.primaryColor,
+            splashFactory: NoSplash.splashFactory,
+          ),
+          onPressed: () {
+            GoRouter.of(context).pop();
+            onConfirmPressed?.call();
+          },
+          child: Text(
+            ref.s.confirm,
+            style: ref.textStyles.dialogButtonTextStyle,
+          ),
+        ),
+      ],
+    );
+  }
+
   Future<void> showSignOutDialog(
     BuildContext context,
     WidgetRef ref, {

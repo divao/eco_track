@@ -62,5 +62,8 @@
   "deleteUserDialogTitle": "Excluir conta",
   "deleteUserDialogContent": "Deseja realmente excluir sua conta?",
   "flushbarSignOutErrorMessage": "Erro ao sair, tente novamente!",
-  "flushbarDeleteUserErrorMessage": "Erro ao excluir a conta, tente novamente!"
+  "flushbarDeleteUserErrorMessage": "Erro ao excluir a conta, tente novamente!",
+  "bottomNavigationMapItem": "Mapa",
+  "locationPermissionInfoDialogContent": "Para visualizar a localização das fotos postadas, é necessário conceder a permissão de localização para que o mapa inicie perto de você.",
+  "mapPageTitle": "Mapa"
 }
