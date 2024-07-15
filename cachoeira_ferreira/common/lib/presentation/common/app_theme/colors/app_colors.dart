@@ -9,4 +9,44 @@ abstract class AppColors {
 
   Color get surfaceColor;
 
+  Color get appBarBackgroundColor;
+
+  Color get appBarContentColor;
+
+  Color get imagePlaceholderColor;
+
+  // Bottom Navigation
+
+  Color get bottomNavigationBarColor;
+
+  Color get bottomNavigationBarSelectedIconColor;
+
+  Color get bottomNavigationBarUnselectedIconColor;
+
+  // Flush Bar
+
+  Color get flushbarBackgroundColor;
+
+  Color get flushbarIconColor;
+
+  // Text Field
+
+  Color get textFieldUnfocusedBorderColor;
+
+  Color get textFieldFocusedBorderColor;
+
+  Color get textFieldErrorBorderColor;
+
+  Color get textFieldPasswordVisibilityIconColor;
+
+  // EcoButton
+
+  Color get filledGreenButtonColor;
+
+  Color get buttonBorderColor;
+
+  Color get buttonFilledGreenLoadingIndicatorColor;
+
+  Color get buttonLoadingIndicatorColor;
+
 }

@@ -19,6 +19,10 @@ class LightAppTheme implements AppTheme {
 
 const _white = Color(0xFFFFFFFF);
 const _black = Color(0xFF000000);
-const _cyan = Color(0xFF00B4D8);
+const _blue = Color(0xFF0084D8);
+const _graniteGray = Color(0xFF666666);
+const _darkGray = Color(0xFF333333);
+const _firebrick = Color(0xFFB3261E);
+const _cerulean = Color(0xFF00AADA);
 
 const _interFontFamily = 'Inter';

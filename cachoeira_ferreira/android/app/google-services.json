@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "475107588729",
+    "project_id": "cachoeiraferreira-5f8b2",
+    "storage_bucket": "cachoeiraferreira-5f8b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475107588729:android:77bbe85ac07948a63b32a8",
+        "android_client_info": {
+          "package_name": "com.divao.cachoeiraferreira"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4ix93OknGl39VlwN0lYdxFhXOn1I2SYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

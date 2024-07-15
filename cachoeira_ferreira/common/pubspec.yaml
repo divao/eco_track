@@ -21,9 +21,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-#  TODO: Tirar comentario quando adicionar assets
-#  assets:
-#    - assets/
 
 flutter_intl:
   main_locale: pt_BR
